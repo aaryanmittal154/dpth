@@ -1,4 +1,4 @@
-# 🏆 Deptheon - Winner of Agents in the Loop Hackathon 2025
+# 🏆 Deptheon
 
 
 **The World's Most Capable Autonomous AI Agent**
