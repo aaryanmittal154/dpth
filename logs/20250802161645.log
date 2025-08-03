@@ -1,0 +1,123 @@
+2025-08-02 16:16:46.489 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 16:16:48.019 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 16:18:56.442 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 16:18:56.443 | INFO     | app.agent.base:run:140 - Executing step 1/50
+2025-08-02 16:19:03.622 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1997, Completion=408, Cumulative Input=1997, Cumulative Completion=408, Total=2405, Cumulative Total=2405
+2025-08-02 16:19:03.623 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:03.623 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:03.623 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:19:03.623 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+917224047701","assistant_config":{"name":"InquiryAssistant","firstMessage":"Hi John! This is Deptheon AI calling on behalf of your friend. Could you please tell me which hackathon Aaryan recently won in San Francisco?","systemPrompt":"You are a polite assistant gathering the name of the hackathon Aaryan Mittal attended and won. After you receive the hackathon name, politely thank John and end the call.","model":"gpt-4","voice":"andrew","temperature":0.4,"maxDurationSeconds":90,"endCallPhrases":["bye","thank you"]}}
+2025-08-02 16:19:03.623 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:19:03.623 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+917224047701'}, 'assistant': {'firstMessage': 'Hi John! This is Deptheon AI calling on behalf of your friend. Could you please tell me which hackathon Aaryan recently won in San Francisco?', 'model': {'provider': 'openai', 'model': 'gpt-4', 'messages': [{'role': 'system', 'content': 'You are a polite assistant gathering the name of the hackathon Aaryan Mittal attended and won. After you receive the hackathon name, politely thank John and end the call.'}], 'temperature': 0.4}, 'voice': {'provider': 'azure', 'voiceId': 'andrew'}, 'maxDurationSeconds': 90, 'endCallPhrases': ['bye', 'thank you']}, 'phone_number_id': 'b682acaa-936b-4bb4-b5a5-c523148e12da'}
+2025-08-02 16:19:03.820 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 23:19:03 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '127', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"7f-jk3xSx1j5lfrJndzYS35yVI+afk"', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '_cfuvid=CssFPBgB0in96wuvGa3Cat7nR6LdBmLiflGdJUtucDw-1754176743820-0.0.1.1-604800000; path=/; domain=.vapi.ai; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '96914c48193a2338-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': "Couldn't start call. Free Vapi numbers do not support international calls.", 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 16:19:03.821 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 16:19:03.821 | INFO     | app.agent.base:run:140 - Executing step 2/50
+2025-08-02 16:19:09.117 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2296, Completion=327, Cumulative Input=4293, Cumulative Completion=735, Total=2623, Cumulative Total=5028
+2025-08-02 16:19:09.118 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:09.118 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:09.118 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:19:09.118 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+917224047701","message":"Hi John! This is Deptheon AI calling on behalf of your friend. Could you please tell me which hackathon Aaryan recently won in San Francisco? Thank you!"}
+2025-08-02 16:19:09.118 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:19:09.118 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+917224047701'}, 'assistant': {'firstMessage': 'Hi John! This is Deptheon AI calling on behalf of your friend. Could you please tell me which hackathon Aaryan recently won in San Francisco? Thank you!', 'model': {'provider': 'openai', 'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a helpful assistant making a phone call. Be concise and friendly.'}]}, 'voice': {'provider': 'azure', 'voiceId': 'andrew'}}, 'phone_number_id': 'b682acaa-936b-4bb4-b5a5-c523148e12da'}
+2025-08-02 16:19:09.555 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 23:19:09 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '127', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"7f-jk3xSx1j5lfrJndzYS35yVI+afk"', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '96914c6a5cb27aaf-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': "Couldn't start call. Free Vapi numbers do not support international calls.", 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 16:19:09.556 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 16:19:09.556 | INFO     | app.agent.base:run:140 - Executing step 3/50
+2025-08-02 16:19:14.147 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2514, Completion=259, Cumulative Input=6807, Cumulative Completion=994, Total=2773, Cumulative Total=7801
+2025-08-02 16:19:14.147 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: I attempted to place the requested Vapi phone call, but the call-creation endpoint returned an error that prevents me from completing any outbound calls. Because the core steps of your request depend on successful phone conversations, I’m unable to proceed further.
+2025-08-02 16:19:14.147 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 16:19:14.147 | INFO     | app.agent.base:run:140 - Executing step 4/50
+2025-08-02 16:19:19.996 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2678, Completion=401, Cumulative Input=9485, Cumulative Completion=1395, Total=3079, Cumulative Total=10880
+2025-08-02 16:19:19.997 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:19.997 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:19.997 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:19:19.997 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_assistant","assistant_config":{"name":"InquiryAssistant","firstMessage":"Hi John! This is Deptheon AI calling on behalf of your friend. Could you please tell me which hackathon Aaryan recently won in San Francisco?","systemPrompt":"You are a polite assistant gathering the name of the hackathon Aaryan Mittal attended and won. After you receive the hackathon name, politely thank John and end the call.","model":"gpt-4","voice":"andrew","temperature":0.4,"maxDurationSeconds":90,"endCallPhrases":["bye","thank you"]}}
+2025-08-02 16:19:19.997 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:19:20.997 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Successfully created assistant!
+Assistant ID: 8290ff6e-d021-48b1-805c-649b6d28658b
+Name: InquiryAssistant
+Model: gpt-4
+Voice: andrew
+
+Use this assistant_id when creating calls.
+2025-08-02 16:19:20.997 | INFO     | app.agent.base:run:140 - Executing step 5/50
+2025-08-02 16:19:25.690 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3005, Completion=315, Cumulative Input=12490, Cumulative Completion=1710, Total=3320, Cumulative Total=14200
+2025-08-02 16:19:25.690 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:25.690 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:25.690 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:19:25.691 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+917224047701","assistant_id":"8290ff6e-d021-48b1-805c-649b6d28658b"}
+2025-08-02 16:19:25.691 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:19:25.691 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+917224047701'}, 'assistant_id': '8290ff6e-d021-48b1-805c-649b6d28658b', 'phone_number_id': 'b682acaa-936b-4bb4-b5a5-c523148e12da'}
+2025-08-02 16:19:25.770 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 23:19:25 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '127', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"7f-jk3xSx1j5lfrJndzYS35yVI+afk"', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '96914cd1adc0cf27-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': "Couldn't start call. Free Vapi numbers do not support international calls.", 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 16:19:25.771 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 16:19:25.771 | INFO     | app.agent.base:run:140 - Executing step 6/50
+2025-08-02 16:19:32.544 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3211, Completion=221, Cumulative Input=15701, Cumulative Completion=1931, Total=3432, Cumulative Total=17632
+2025-08-02 16:19:32.545 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:32.545 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:32.545 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:19:32.545 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_calls","limit":5}
+2025-08-02 16:19:32.545 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:19:33.502 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Recent Calls (showing 5 of 5 requested):
+
+1. Call a70f4ce4-20a2-4770-b972-244a06a51655
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.04
+
+2. Call a6608a11-fc6e-464b-be47-f1977773f261
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.02
+
+3. Call 86e7118c-ef53-4425-8502-df43a29d741a
+   Status: ended
+   Type: webCall
+   Cost: $0.12
+
+4. Call ae51ea72-144b-4d3b-9f6e-b873cd8b0898
+   Status: ended
+   Type: webCall
+   Cost: $0.11
+
+5. Call 694dd4f3-4a01-44a3-8b6c-b98532b0d8ad
+   Status: ended
+   Type: webCall
+   Cost: $0.08
+
+
+2025-08-02 16:19:33.502 | INFO     | app.agent.base:run:140 - Executing step 7/50
+2025-08-02 16:19:42.561 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3611, Completion=286, Cumulative Input=19312, Cumulative Completion=2217, Total=3897, Cumulative Total=21529
+2025-08-02 16:19:42.561 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:42.561 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:42.561 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:19:42.561 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"sms"}
+2025-08-02 16:19:42.561 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:19:42.582 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+No tools found matching your query
+2025-08-02 16:19:42.582 | INFO     | app.agent.base:run:140 - Executing step 8/50
+2025-08-02 16:19:46.920 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3775, Completion=222, Cumulative Input=23087, Cumulative Completion=2439, Total=3997, Cumulative Total=25526
+2025-08-02 16:19:46.920 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:19:46.921 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:19:46.921 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:19:46.921 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"search"}
+2025-08-02 16:19:46.921 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:19:46.924 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 3 tools matching 'search':
+
+
+🔌 Other Integrations:
+  - composio_search (composio_search)
+  - elasticsearch (elasticsearch)
+  - yousearch (yousearch)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:19:46.924 | INFO     | app.agent.base:run:140 - Executing step 9/50
+2025-08-02 16:19:48.845 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:19:48.846 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 16:19:48.846 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:19:48.846 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

@@ -1,0 +1,1 @@
+2025-08-02 14:04:55.075 | ERROR    | app.tool.vapi_tool:_initialize_vapi:155 - vapi-server-sdk not installed. Run: pip install vapi-server-sdk

@@ -1,0 +1,20 @@
+2025-08-02 16:54:22.102 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 16:54:23.658 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 16:54:35.628 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 16:54:35.628 | INFO     | app.agent.base:run:140 - Executing step 1/50
+2025-08-02 16:54:38.176 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1893, Completion=105, Cumulative Input=1893, Cumulative Completion=105, Total=1998, Cumulative Total=1998
+2025-08-02 16:54:38.177 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:54:38.177 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:54:38.177 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['str_replace_editor']
+2025-08-02 16:54:38.177 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"command":"view","path":"/Users/aaryanmittal/ef-hackathon/workspace"}
+2025-08-02 16:54:38.177 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'str_replace_editor'...
+2025-08-02 16:54:38.200 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'str_replace_editor' completed its mission! Result: Observed output of cmd `str_replace_editor` executed:
+Here's the files and directories up to 2 levels deep in /Users/aaryanmittal/ef-hackathon/workspace, excluding hidden items:
+/Users/aaryanmittal/ef-hackathon/workspace
+
+
+2025-08-02 16:54:38.200 | INFO     | app.agent.base:run:140 - Executing step 2/50
+2025-08-02 16:54:39.966 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:54:39.966 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 16:54:39.966 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:54:39.966 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

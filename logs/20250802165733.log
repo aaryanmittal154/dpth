@@ -1,0 +1,718 @@
+2025-08-02 16:57:34.001 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 16:57:35.515 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 16:58:46.723 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 16:58:46.724 | INFO     | app.agent.base:run:140 - Executing step 1/50
+2025-08-02 16:58:53.804 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1427, Completion=350, Cumulative Input=1427, Cumulative Completion=350, Total=1777, Cumulative Total=1777
+2025-08-02 16:58:53.805 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:58:53.805 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:58:53.805 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:58:53.805 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"search"}
+2025-08-02 16:58:53.805 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:58:53.832 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 3 tools matching 'search':
+
+
+🔌 Other Integrations:
+  - composio_search (composio_search)
+  - elasticsearch (elasticsearch)
+  - yousearch (yousearch)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:58:53.832 | INFO     | app.agent.base:run:140 - Executing step 2/50
+2025-08-02 16:58:57.699 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1640, Completion=158, Cumulative Input=3067, Cumulative Completion=508, Total=1798, Cumulative Total=3575
+2025-08-02 16:58:57.700 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:58:57.700 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:58:57.700 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:58:57.700 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"email"}
+2025-08-02 16:58:57.700 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:58:57.702 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 9 tools matching 'email':
+
+
+📧 Email & Communication:
+  - bigmailer (bigmailer)
+  - gmail (gmail)
+  - mailchimp (mailchimp)
+  - outlook (outlook)
+  - sendgrid (sendgrid)
+
+🔌 Other Integrations:
+  - benchmark_email (benchmark_email)
+  - emailable (emailable)
+  - emailoctopus (emailoctopus)
+  - enginemailer (enginemailer)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:58:57.702 | INFO     | app.agent.base:run:140 - Executing step 3/50
+2025-08-02 16:59:02.039 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1903, Completion=227, Cumulative Input=4970, Cumulative Completion=735, Total=2130, Cumulative Total=5705
+2025-08-02 16:59:02.039 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:02.039 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:02.039 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:02.039 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"composio_search"}
+2025-08-02 16:59:02.039 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:02.053 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: composio_search (COMPOSIO_SEARCH)
+Category: 🔌 Other Integrations
+
+Available Actions (13):
+  - duck_duck_go_search: search duck duck go search
+  - google_maps_search: search google maps search
+  - event_search: search event search
+  - tools: search tools
+  - scholar_search: search scholar search
+  - exa_similarlink: search exa similarlink
+  - shopping_search: search shopping search
+  - image_search: search image search
+  - finance_search: search finance search
+  - trends_search: search trends search
+  ... and 3 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "composio_search", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:02.053 | INFO     | app.agent.base:run:140 - Executing step 4/50
+2025-08-02 16:59:07.719 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2233, Completion=354, Cumulative Input=7203, Cumulative Completion=1089, Total=2587, Cumulative Total=8292
+2025-08-02 16:59:07.720 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:07.720 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:07.720 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:07.720 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"vapi_call"}
+2025-08-02 16:59:07.720 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:07.721 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Tool 'vapi_call' not found
+2025-08-02 16:59:07.721 | INFO     | app.agent.base:run:140 - Executing step 5/50
+2025-08-02 16:59:11.802 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2405, Completion=227, Cumulative Input=9608, Cumulative Completion=1316, Total=2632, Cumulative Total=10924
+2025-08-02 16:59:11.803 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:11.803 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:11.803 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:11.803 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"composio_search"}
+2025-08-02 16:59:11.803 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:11.814 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: composio_search (COMPOSIO_SEARCH)
+Category: 🔌 Other Integrations
+
+Available Actions (13):
+  - duck_duck_go_search: search duck duck go search
+  - google_maps_search: search google maps search
+  - event_search: search event search
+  - tools: search tools
+  - scholar_search: search scholar search
+  - exa_similarlink: search exa similarlink
+  - shopping_search: search shopping search
+  - image_search: search image search
+  - finance_search: search finance search
+  - trends_search: search trends search
+  ... and 3 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "composio_search", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:11.814 | INFO     | app.agent.base:run:140 - Executing step 6/50
+2025-08-02 16:59:18.673 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2735, Completion=416, Cumulative Input=12343, Cumulative Completion=1732, Total=3151, Cumulative Total=14075
+2025-08-02 16:59:18.673 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:18.673 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:18.673 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:18.673 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 16:59:18.674 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:18.685 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:18.685 | INFO     | app.agent.base:run:140 - Executing step 7/50
+2025-08-02 16:59:21.743 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3054, Completion=185, Cumulative Input=15397, Cumulative Completion=1917, Total=3239, Cumulative Total=17314
+2025-08-02 16:59:21.743 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:21.743 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:21.743 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:21.743 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"composio_search","action_name":"duck_duck_go_search","parameters":{"query":"agents in the loop hackathon Aaryan wins"}}
+2025-08-02 16:59:21.744 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:23.726 | ERROR    | app.tool.composio_tool:_execute_tool_action:434 - Failed to execute tool action: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"2faf1d9b-d629-4582-9afb-3a74bb343996","suggested_fix":"You can use this toolkit without auth config."}}}
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 41, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x103bc5580>
+    │       └ <function run at 0x103a8f2e0>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x103b81c40>
+           │      └ <function Runner.run at 0x103aa34c0>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:31> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x103aa1120>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x103aa1080>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x103aa2e80>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1039f93a0>
+    └ <Handle <TaskStepMethWrapper object at 0x169b2a110>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x169b2a110>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x169b2a110>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x169b2a110>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 31, in main
+    await agent.run(prompt)
+          │     │   └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+          │     └ <function ToolCallAgent.run at 0x11134b380>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x11126afc0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x11126b6a0>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_XvHyb2XRakXxmFTU00YPcY6Q', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x1113482c0>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': 'agents i...
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x111349d00>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x12730ca50>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': 'agents i...
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': 'agents i...
+                 │    └ <function ComposioTool.execute at 0x111348360>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 190, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': 'agents i...
+                 │    └ <function ComposioTool._execute_tool_action at 0x11134a160>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 393, in _execute_tool_action
+    auth_url = entity.initiate_connection(app.slug.lower())
+               │      │                   │   │    └ <method 'lower' of 'str' objects>
+               │      │                   │   └ 'COMPOSIO_SEARCH'
+               │      │                   └ App.COMPOSIO_SEARCH
+               │      └ <function Entity.initiate_connection at 0x15023e3e0>
+               └ <composio.client.Entity object at 0x168b9f010>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/__init__.py", line 465, in initiate_connection
+    integration = self.client.integrations.create(
+                  │    │      │            └ <function Integrations.create at 0x15023cd60>
+                  │    │      └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+                  │    └ <composio.client.Composio object at 0x1273ff490>
+                  └ <composio.client.Entity object at 0x168b9f010>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/collections.py", line 1554, in create
+    response = self._raise_if_required(
+               │    └ <function Collection._raise_if_required at 0x1500c6840>
+               └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/base.py", line 48, in _raise_if_required
+    raise HTTPError(
+          └ <class 'composio.exceptions.HTTPError'>
+
+composio.exceptions.HTTPError: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"2faf1d9b-d629-4582-9afb-3a74bb343996","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 16:59:23.734 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"2faf1d9b-d629-4582-9afb-3a74bb343996","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 16:59:23.734 | INFO     | app.agent.base:run:140 - Executing step 8/50
+2025-08-02 16:59:32.608 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3322, Completion=482, Cumulative Input=18719, Cumulative Completion=2399, Total=3804, Cumulative Total=21118
+2025-08-02 16:59:32.608 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:32.608 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:32.608 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:32.608 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"yousearch"}
+2025-08-02 16:59:32.608 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:32.618 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: yousearch (YOUSEARCH)
+Category: 🔌 Other Integrations
+
+No actions found for this tool.
+
+
+To execute an action, use: {"action": "execute", "tool_name": "yousearch", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:32.619 | INFO     | app.agent.base:run:140 - Executing step 9/50
+2025-08-02 16:59:37.000 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3542, Completion=234, Cumulative Input=22261, Cumulative Completion=2633, Total=3776, Cumulative Total=24894
+2025-08-02 16:59:37.001 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:37.001 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:37.001 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:37.001 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"composio_search","action_name":"tools","parameters":{}}
+2025-08-02 16:59:37.001 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:38.400 | ERROR    | app.tool.composio_tool:_execute_tool_action:434 - Failed to execute tool action: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"a790dec0-24f5-4636-9b8d-ce5caeb5e6c7","suggested_fix":"You can use this toolkit without auth config."}}}
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 41, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x103bc5580>
+    │       └ <function run at 0x103a8f2e0>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x103b81c40>
+           │      └ <function Runner.run at 0x103aa34c0>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:31> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x103aa1120>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x103aa1080>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x103aa2e80>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1039f93a0>
+    └ <Handle <TaskStepMethWrapper object at 0x169b28e20>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x169b28e20>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x169b28e20>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x169b28e20>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 31, in main
+    await agent.run(prompt)
+          │     │   └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+          │     └ <function ToolCallAgent.run at 0x11134b380>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x11126afc0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x11126b6a0>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_4RPccknTwlBlMcjV2uzUbtAZ', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x1113482c0>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'tools', 'parameters': {}}
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x111349d00>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x12730ca50>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'tools', 'parameters': {}}
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'tools', 'parameters': {}}
+                 │    └ <function ComposioTool.execute at 0x111348360>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 190, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'tools', 'parameters': {}}
+                 │    └ <function ComposioTool._execute_tool_action at 0x11134a160>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 393, in _execute_tool_action
+    auth_url = entity.initiate_connection(app.slug.lower())
+               │      │                   │   │    └ <method 'lower' of 'str' objects>
+               │      │                   │   └ 'COMPOSIO_SEARCH'
+               │      │                   └ App.COMPOSIO_SEARCH
+               │      └ <function Entity.initiate_connection at 0x15023e3e0>
+               └ <composio.client.Entity object at 0x169d0b4d0>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/__init__.py", line 465, in initiate_connection
+    integration = self.client.integrations.create(
+                  │    │      │            └ <function Integrations.create at 0x15023cd60>
+                  │    │      └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+                  │    └ <composio.client.Composio object at 0x1273ff490>
+                  └ <composio.client.Entity object at 0x169d0b4d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/collections.py", line 1554, in create
+    response = self._raise_if_required(
+               │    └ <function Collection._raise_if_required at 0x1500c6840>
+               └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/base.py", line 48, in _raise_if_required
+    raise HTTPError(
+          └ <class 'composio.exceptions.HTTPError'>
+
+composio.exceptions.HTTPError: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"a790dec0-24f5-4636-9b8d-ce5caeb5e6c7","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 16:59:38.407 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"a790dec0-24f5-4636-9b8d-ce5caeb5e6c7","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 16:59:38.407 | INFO     | app.agent.base:run:140 - Executing step 10/50
+2025-08-02 16:59:42.318 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3799, Completion=286, Cumulative Input=26060, Cumulative Completion=2919, Total=4085, Cumulative Total=28979
+2025-08-02 16:59:42.319 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:42.319 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:42.319 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:42.319 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"exa"}
+2025-08-02 16:59:42.319 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:42.322 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 1 tools matching 'exa':
+
+
+🔌 Other Integrations:
+  - exa (exa)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:59:42.323 | INFO     | app.agent.base:run:140 - Executing step 11/50
+2025-08-02 16:59:44.068 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3991, Completion=26, Cumulative Input=30051, Cumulative Completion=2945, Total=4017, Cumulative Total=32996
+2025-08-02 16:59:44.069 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:44.069 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:44.069 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:44.069 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"exa"}
+2025-08-02 16:59:44.069 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:44.080 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: exa (EXA)
+Category: 🔌 Other Integrations
+
+Available Actions (14):
+  - delete_import: delete import
+  - update_import: update import
+  - create_import: create import
+  - list_events: list events
+  - get_contents_action: get contents action
+  - create_webset: create webset
+  - create_monitor: create monitor
+  - list_webhooks: list webhooks
+  - answer: answer
+  - delete_webset: delete webset
+  ... and 4 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "exa", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:44.080 | INFO     | app.agent.base:run:140 - Executing step 12/50
+2025-08-02 16:59:46.933 | INFO     | app.llm:update_token_count:250 - Token usage: Input=4298, Completion=174, Cumulative Input=34349, Cumulative Completion=3119, Total=4472, Cumulative Total=37468
+2025-08-02 16:59:46.934 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:46.934 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:46.934 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:46.934 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"exa","action_name":"answer","parameters":{"question":"agents in the loop hackathon"}}
+2025-08-02 16:59:46.934 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:48.267 | ERROR    | app.tool.composio_tool:_execute_tool_action:434 - Failed to execute tool action: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"4c85d391-f6a8-45d8-99c5-3c811aa0c3e5","suggested_fix":""}}}
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 41, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x103bc5580>
+    │       └ <function run at 0x103a8f2e0>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x103b81c40>
+           │      └ <function Runner.run at 0x103aa34c0>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:31> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x103aa1120>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x103aa1080>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x103aa2e80>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1039f93a0>
+    └ <Handle <TaskStepMethWrapper object at 0x1665e7790>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x1665e7790>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x1665e7790>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x1665e7790>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 31, in main
+    await agent.run(prompt)
+          │     │   └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+          │     └ <function ToolCallAgent.run at 0x11134b380>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x11126afc0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x11126b6a0>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_vxgqB9KpaWTJ8Zwb96vCKTAp', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x1113482c0>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'answer', 'parameters': {'question': 'agents in the loop hackathon'}}
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x111349d00>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x12730ca50>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'answer', 'parameters': {'question': 'agents in the loop hackathon'}}
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'answer', 'parameters': {'question': 'agents in the loop hackathon'}}
+                 │    └ <function ComposioTool.execute at 0x111348360>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 190, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'answer', 'parameters': {'question': 'agents in the loop hackathon'}}
+                 │    └ <function ComposioTool._execute_tool_action at 0x11134a160>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 393, in _execute_tool_action
+    auth_url = entity.initiate_connection(app.slug.lower())
+               │      │                   │   │    └ <method 'lower' of 'str' objects>
+               │      │                   │   └ 'EXA'
+               │      │                   └ App.EXA
+               │      └ <function Entity.initiate_connection at 0x15023e3e0>
+               └ <composio.client.Entity object at 0x169d2b210>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/__init__.py", line 465, in initiate_connection
+    integration = self.client.integrations.create(
+                  │    │      │            └ <function Integrations.create at 0x15023cd60>
+                  │    │      └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+                  │    └ <composio.client.Composio object at 0x1273ff490>
+                  └ <composio.client.Entity object at 0x169d2b210>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/collections.py", line 1554, in create
+    response = self._raise_if_required(
+               │    └ <function Collection._raise_if_required at 0x1500c6840>
+               └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/base.py", line 48, in _raise_if_required
+    raise HTTPError(
+          └ <class 'composio.exceptions.HTTPError'>
+
+composio.exceptions.HTTPError: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"4c85d391-f6a8-45d8-99c5-3c811aa0c3e5","suggested_fix":""}}}
+2025-08-02 16:59:48.279 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"4c85d391-f6a8-45d8-99c5-3c811aa0c3e5","suggested_fix":""}}}
+2025-08-02 16:59:48.280 | INFO     | app.agent.base:run:140 - Executing step 13/50
+2025-08-02 16:59:53.084 | INFO     | app.llm:update_token_count:250 - Token usage: Input=4544, Completion=291, Cumulative Input=38893, Cumulative Completion=3410, Total=4835, Cumulative Total=42303
+2025-08-02 16:59:53.084 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:59:53.085 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:59:53.085 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:59:53.085 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"composio_search"}
+2025-08-02 16:59:53.085 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:59:53.096 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: composio_search (COMPOSIO_SEARCH)
+Category: 🔌 Other Integrations
+
+Available Actions (13):
+  - duck_duck_go_search: search duck duck go search
+  - google_maps_search: search google maps search
+  - event_search: search event search
+  - tools: search tools
+  - scholar_search: search scholar search
+  - exa_similarlink: search exa similarlink
+  - shopping_search: search shopping search
+  - image_search: search image search
+  - finance_search: search finance search
+  - trends_search: search trends search
+  ... and 3 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "composio_search", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:59:53.096 | INFO     | app.agent.base:run:140 - Executing step 14/50
+2025-08-02 17:00:00.753 | INFO     | app.llm:update_token_count:250 - Token usage: Input=4874, Completion=631, Cumulative Input=43767, Cumulative Completion=4041, Total=5505, Cumulative Total=47808
+2025-08-02 17:00:00.753 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:00:00.753 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:00:00.754 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:00:00.754 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"composio_search","action_name":"duck_duck_go_search","parameters":{"query":"\"agents in the loop\" hackathon"}}
+2025-08-02 17:00:00.754 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:00:03.131 | ERROR    | app.tool.composio_tool:_execute_tool_action:434 - Failed to execute tool action: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"3eec5920-bd03-4aae-a32e-3deb5f814d10","suggested_fix":"You can use this toolkit without auth config."}}}
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 41, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x103bc5580>
+    │       └ <function run at 0x103a8f2e0>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x103b81c40>
+           │      └ <function Runner.run at 0x103aa34c0>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:31> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x103aa1120>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1103d7710>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x103aa1080>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x103aa2e80>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1039f93a0>
+    └ <Handle <TaskStepMethWrapper object at 0x169b2a440>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x169b2a440>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x169b2a440>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x169b2a440>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 31, in main
+    await agent.run(prompt)
+          │     │   └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+          │     └ <function ToolCallAgent.run at 0x11134b380>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'My friend Aaryan recently won the agents in the loop hackathon. COuld you do a search about the hackathon, and then call him...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x11126afc0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x11126b6a0>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_ilnI0GBwyyqgQBiAxWnIcQd2', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x1113482c0>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': '"agents ...
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x111349d00>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x12730ca50>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': '"agents ...
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': '"agents ...
+                 │    └ <function ComposioTool.execute at 0x111348360>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 190, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'composio_search', 'action_name': 'duck_duck_go_search', 'parameters': {'query': '"agents ...
+                 │    └ <function ComposioTool._execute_tool_action at 0x11134a160>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 393, in _execute_tool_action
+    auth_url = entity.initiate_connection(app.slug.lower())
+               │      │                   │   │    └ <method 'lower' of 'str' objects>
+               │      │                   │   └ 'COMPOSIO_SEARCH'
+               │      │                   └ App.COMPOSIO_SEARCH
+               │      └ <function Entity.initiate_connection at 0x15023e3e0>
+               └ <composio.client.Entity object at 0x1644e19d0>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/__init__.py", line 465, in initiate_connection
+    integration = self.client.integrations.create(
+                  │    │      │            └ <function Integrations.create at 0x15023cd60>
+                  │    │      └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+                  │    └ <composio.client.Composio object at 0x1273ff490>
+                  └ <composio.client.Entity object at 0x1644e19d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/collections.py", line 1554, in create
+    response = self._raise_if_required(
+               │    └ <function Collection._raise_if_required at 0x1500c6840>
+               └ <composio.client.collections.Integrations object at 0x1274ae9d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/base.py", line 48, in _raise_if_required
+    raise HTTPError(
+          └ <class 'composio.exceptions.HTTPError'>
+
+composio.exceptions.HTTPError: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"3eec5920-bd03-4aae-a32e-3deb5f814d10","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 17:00:03.139 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: {"error":"Failed to create auth config","details":{"error":{"message":"Cannot create an auth config for a no auth toolkit: composio_search","code":303,"status":400,"request_id":"3eec5920-bd03-4aae-a32e-3deb5f814d10","suggested_fix":"You can use this toolkit without auth config."}}}
+2025-08-02 17:00:03.139 | INFO     | app.agent.base:run:140 - Executing step 15/50
+2025-08-02 17:00:09.308 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 17:00:09.308 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 17:00:09.308 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 17:00:09.308 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

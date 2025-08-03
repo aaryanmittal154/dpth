@@ -1,0 +1,26 @@
+2025-08-02 13:57:47.895 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 13:57:49.404 | ERROR    | app.tool.vapi_tool:_initialize_vapi:155 - vapi-server-sdk not installed. Run: pip install vapi-server-sdk
+2025-08-02 13:58:07.895 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 13:58:07.895 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 13:58:12.071 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1894, Completion=257, Cumulative Input=1894, Cumulative Completion=257, Total=2151, Cumulative Total=2151
+2025-08-02 13:58:12.071 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:58:12.071 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:58:12.071 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 13:58:12.071 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","message":"Hi Aaryan, this is an automated call from Deptheon AI. Just calling to check in and ask: how are you doing today?"}
+2025-08-02 13:58:12.072 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 13:58:12.072 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Vapi not configured. Please set VAPI_API_KEY environment variable.
+2025-08-02 13:58:12.072 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 13:58:14.600 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2101, Completion=95, Cumulative Input=3995, Cumulative Completion=352, Total=2196, Cumulative Total=4347
+2025-08-02 13:58:14.600 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:58:14.600 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:58:14.601 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:58:14.601 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"twilio"}
+2025-08-02 13:58:14.601 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:58:14.623 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+No tools found matching your query
+2025-08-02 13:58:14.623 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 13:58:18.530 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:58:18.530 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 13:58:18.531 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:58:18.531 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

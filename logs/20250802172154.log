@@ -1,0 +1,5 @@
+2025-08-02 17:21:55.647 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 17:21:57.536 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 17:22:10.317 | WARNING  | __main__:main:34 - Operation interrupted.
+2025-08-02 17:22:10.317 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 17:22:10.317 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

@@ -1,0 +1,121 @@
+2025-08-02 13:41:55.704 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 13:41:57.130 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 13:41:57.130 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 13:42:00.067 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1358, Completion=94, Cumulative Input=1358, Cumulative Completion=94, Total=1452, Cumulative Total=1452
+2025-08-02 13:42:00.067 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:00.067 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:00.067 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:42:00.067 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"email"}
+2025-08-02 13:42:00.067 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:42:00.089 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 9 tools matching 'email':
+
+
+📧 Email & Communication:
+  - bigmailer (bigmailer)
+  - gmail (gmail)
+  - mailchimp (mailchimp)
+  - outlook (outlook)
+  - sendgrid (sendgrid)
+
+🔌 Other Integrations:
+  - benchmark_email (benchmark_email)
+  - emailable (emailable)
+  - emailoctopus (emailoctopus)
+  - enginemailer (enginemailer)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 13:42:00.089 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 13:42:04.940 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1621, Completion=160, Cumulative Input=2979, Cumulative Completion=254, Total=1781, Cumulative Total=3233
+2025-08-02 13:42:04.940 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:04.940 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:04.940 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:42:04.940 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 13:42:04.940 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:42:04.955 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 13:42:04.956 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 13:42:11.368 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1940, Completion=284, Cumulative Input=4919, Cumulative Completion=538, Total=2224, Cumulative Total=5457
+2025-08-02 13:42:11.369 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:11.369 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:11.369 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:42:11.369 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"send_email","parameters":{"to":"aaryanmittal154@gmail.com","subject":"Quick Check-In","body":"Hi Aaryan,\n\nJust wanted to check in and see how your work is going. Hope everything is progressing smoothly.\n\nBest,\nDeptheon AI"}}
+2025-08-02 13:42:11.369 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:42:12.102 | INFO     | app.tool.composio_tool:_execute_tool_action:301 - Executing GMAIL_SEND_EMAIL with parameters: {'to': 'aaryanmittal154@gmail.com', 'subject': 'Quick Check-In', 'body': 'Hi Aaryan,\n\nJust wanted to check in and see how your work is going. Hope everything is progressing smoothly.\n\nBest,\nDeptheon AI'}
+2025-08-02 13:42:13.845 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Invalid request data provided
+- Following fields are missing: {'recipient_email'}
+2025-08-02 13:42:13.845 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-08-02 13:42:16.125 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2177, Completion=32, Cumulative Input=7096, Cumulative Completion=570, Total=2209, Cumulative Total=7666
+2025-08-02 13:42:16.125 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:16.125 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:16.126 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:42:16.126 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 13:42:16.126 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:42:16.137 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 13:42:16.137 | INFO     | app.agent.base:run:140 - Executing step 5/20
+2025-08-02 13:42:24.395 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2496, Completion=349, Cumulative Input=9592, Cumulative Completion=919, Total=2845, Cumulative Total=10511
+2025-08-02 13:42:24.395 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:24.395 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:24.395 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:42:24.395 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"send_email","parameters":{"recipient_email":"aaryanmittal154@gmail.com","subject":"Quick Check-In","body":"Hi Aaryan,\n\nJust wanted to check in and see how your work is going. Hope everything is progressing smoothly.\n\nBest,\nDeptheon AI"}}
+2025-08-02 13:42:24.396 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:42:24.823 | INFO     | app.tool.composio_tool:_execute_tool_action:301 - Executing GMAIL_SEND_EMAIL with parameters: {'recipient_email': 'aaryanmittal154@gmail.com', 'subject': 'Quick Check-In', 'body': 'Hi Aaryan,\n\nJust wanted to check in and see how your work is going. Hope everything is progressing smoothly.\n\nBest,\nDeptheon AI'}
+2025-08-02 13:42:26.856 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Cmd `composio_tool` completed with no output
+2025-08-02 13:42:26.857 | INFO     | app.agent.base:run:140 - Executing step 6/20
+2025-08-02 13:42:28.908 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2716, Completion=45, Cumulative Input=12308, Cumulative Completion=964, Total=2761, Cumulative Total=13272
+2025-08-02 13:42:28.909 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: Email successfully sent to aaryanmittal154@gmail.com with the subject “Quick Check-In” asking how his work is going.
+
+No further action required.
+2025-08-02 13:42:28.909 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 13:42:28.909 | INFO     | app.agent.base:run:140 - Executing step 7/20
+2025-08-02 13:42:32.316 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2863, Completion=151, Cumulative Input=15171, Cumulative Completion=1115, Total=3014, Cumulative Total=16286
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['terminate']
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"status":"success"}
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'terminate'...
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:_handle_special_tool:217 - 🏁 Special tool 'terminate' has completed the task!
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'terminate' completed its mission! Result: Observed output of cmd `terminate` executed:
+The interaction has been completed with status: success
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 13:42:32.317 | INFO     | __main__:main:32 - Request processing completed.
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:42:32.317 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

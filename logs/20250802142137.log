@@ -1,0 +1,50 @@
+2025-08-02 14:21:38.348 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 14:21:40.058 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 14:22:00.633 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 14:22:00.634 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 14:22:03.512 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1896, Completion=119, Cumulative Input=1896, Cumulative Completion=119, Total=2015, Cumulative Total=2015
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","message":"Hi, I'm calling to check in and see how you are doing today. How are you?"}
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:22:03.513 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 14:22:03.513 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 14:22:09.828 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2098, Completion=385, Cumulative Input=3994, Cumulative Completion=504, Total=2483, Cumulative Total=4498
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","assistant_config":{"firstMessage":"Hello, I'm just checking in. How are you doing today?","voice":"andrew","model":"gpt-4"}}
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:22:09.828 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 14:22:09.828 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 14:22:14.315 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2310, Completion=223, Cumulative Input=6304, Cumulative Completion=727, Total=2533, Cumulative Total=7031
+2025-08-02 14:22:14.315 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:22:14.315 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:22:14.315 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 14:22:14.315 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"twilio"}
+2025-08-02 14:22:14.315 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 14:22:14.339 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+No tools found matching your query
+2025-08-02 14:22:14.339 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-08-02 14:22:19.811 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2475, Completion=321, Cumulative Input=8779, Cumulative Completion=1048, Total=2796, Cumulative Total=9827
+2025-08-02 14:22:19.811 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:22:19.811 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:22:19.811 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:22:19.811 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_assistant","assistant_config":{"name":"CheckInBot","firstMessage":"Hello, I'm calling to check in. How are you doing today?","voice":"andrew","model":"gpt-4"}}
+2025-08-02 14:22:19.811 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:22:20.848 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Successfully created assistant!
+Assistant ID: ed1338a1-f3e6-43bf-a6d8-9f22387836bc
+Name: CheckInBot
+Model: gpt-4
+Voice: andrew
+
+Use this assistant_id when creating calls.
+2025-08-02 14:22:20.848 | INFO     | app.agent.base:run:140 - Executing step 5/20
+2025-08-02 14:22:24.861 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 14:22:24.861 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 14:22:24.861 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 14:22:24.861 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

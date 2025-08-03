@@ -1,0 +1,70 @@
+2025-08-02 14:30:40.668 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 14:30:42.199 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 14:30:45.274 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 14:30:45.274 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 14:30:49.378 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1900, Completion=245, Cumulative Input=1900, Cumulative Completion=245, Total=2145, Cumulative Total=2145
+2025-08-02 14:30:49.378 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:30:49.378 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:30:49.378 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:30:49.378 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","message":"Hi Aaryan, this is Deptheon AI. How are you doing today?"}
+2025-08-02 14:30:49.378 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:30:49.378 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+14156056693'}, 'assistant': {'firstMessage': 'Hi Aaryan, this is Deptheon AI. How are you doing today?', 'model': {'provider': 'openai', 'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a helpful assistant making a phone call. Be concise and friendly.'}]}, 'voice': {'provider': 'azure', 'voiceId': 'andrew'}}, 'phone_number_id': '+14156876716'}
+2025-08-02 14:30:49.898 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 21:30:49 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '83', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"53-zQRPkJo4qmuWXVIhDrVRD0OfPP8"', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '_cfuvid=go4VOfSGQO9Wy.7Hh9Av_f1AliMdxz.jjpGW4.oEFBU-1754170249703-0.0.1.1-604800000; path=/; domain=.vapi.ai; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '9690adbbbc06cf17-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': ['phoneNumberId must be a UUID'], 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 14:30:49.898 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 14:30:49.899 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 14:30:53.745 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2100, Completion=260, Cumulative Input=4000, Cumulative Completion=505, Total=2360, Cumulative Total=4505
+2025-08-02 14:30:53.745 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:30:53.745 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:30:53.746 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:30:53.746 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","assistant_config":{"firstMessage":"Hi Aaryan, this is Deptheon AI. How are you doing today?","voice":"emma","model":"gpt-4"}}
+2025-08-02 14:30:53.746 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:30:53.746 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+14156056693'}, 'assistant': {'firstMessage': 'Hi Aaryan, this is Deptheon AI. How are you doing today?', 'model': {'provider': 'openai', 'model': 'gpt-4', 'messages': [{'role': 'system', 'content': 'You are a helpful assistant.'}]}, 'voice': {'provider': 'azure', 'voiceId': 'emma'}}, 'phone_number_id': '+14156876716'}
+2025-08-02 14:30:53.827 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 21:30:53 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '83', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"53-zQRPkJo4qmuWXVIhDrVRD0OfPP8"', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9690add5f9e7cf17-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': ['phoneNumberId must be a UUID'], 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 14:30:53.827 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 14:30:53.827 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 14:30:59.620 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2315, Completion=377, Cumulative Input=6315, Cumulative Completion=882, Total=2692, Cumulative Total=7197
+2025-08-02 14:30:59.620 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 14:30:59.620 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 14:30:59.620 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 14:30:59.620 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","message":"Hello Aaryan, this is Deptheon AI calling to check in and see how you're doing today."}
+2025-08-02 14:30:59.620 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 14:30:59.620 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+14156056693'}, 'assistant': {'firstMessage': "Hello Aaryan, this is Deptheon AI calling to check in and see how you're doing today.", 'model': {'provider': 'openai', 'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a helpful assistant making a phone call. Be concise and friendly.'}]}, 'voice': {'provider': 'azure', 'voiceId': 'andrew'}}, 'phone_number_id': '+14156876716'}
+2025-08-02 14:30:59.732 | WARNING  | app.tool.vapi_tool:_create_call:321 - First attempt failed with headers: {'date': 'Sat, 02 Aug 2025 21:30:59 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '83', 'connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'etag': 'W/"53-zQRPkJo4qmuWXVIhDrVRD0OfPP8"', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '9690adfad913ebe4-SJC', 'alt-svc': 'h3=":443"; ma=86400'}, status_code: 400, body: {'message': ['phoneNumberId must be a UUID'], 'error': 'Bad Request', 'statusCode': 400}, trying alternative approach
+2025-08-02 14:30:59.732 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Failed to create call: CallsClient.create() got an unexpected keyword argument 'phoneNumberId'
+2025-08-02 14:30:59.733 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-08-02 14:31:08.945 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2519, Completion=457, Cumulative Input=8834, Cumulative Completion=1339, Total=2976, Cumulative Total=10173
+2025-08-02 14:31:08.945 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: I attempted three times to create an outbound call via the Vapi AI tool, but the API returned the same error each time:
+
+“CallsClient.create() got an unexpected keyword argument 'phoneNumberId'”
+
+What this means  
+• The workspace’s Vapi account has not been fully configured with a default “phone number ID.”  
+• The SDK expects that ID to be set, or it must be passed explicitly in the call-creation payload. Because neither condition is true, the request fails before the call can be placed.
+
+Next steps to fix and try again
+1. In the Vapi dashboard, provision an outbound phone number (or use an existing one) and copy its “phoneNumberId.”  
+2. Pass that ID in the create_call parameters, e.g.:
+
+```
+{
+  "action": "create_call",
+  "phone_number": "+14156056693",
+  "phoneNumberId": "pn_123abc",          // ← new field
+  "message": "Hi Aaryan, this is Deptheon AI. How are you doing today?"
+}
+```
+
+3. Alternatively, set that phoneNumberId as the account’s default so we don’t have to include it each time.
+
+Once a valid phoneNumberId is configured, we can retry the call, monitor its status, and retrieve a recording or transcript if desired.
+
+Let me know if you would like me to attempt the call again after the phone number is set up, or if you need help performing the Vapi dashboard steps.
+2025-08-02 14:31:08.946 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 14:31:08.946 | INFO     | app.agent.base:run:140 - Executing step 5/20
+2025-08-02 14:31:15.991 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 14:31:15.991 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 14:31:15.991 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 14:31:15.991 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

@@ -1,0 +1,91 @@
+2025-08-02 16:19:52.407 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 16:19:53.939 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 16:21:08.012 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 16:21:08.012 | INFO     | app.agent.base:run:140 - Executing step 1/50
+2025-08-02 16:21:24.029 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1955, Completion=1246, Cumulative Input=1955, Cumulative Completion=1246, Total=3201, Cumulative Total=3201
+2025-08-02 16:21:24.030 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:21:24.030 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:21:24.030 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:21:24.030 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"search"}
+2025-08-02 16:21:24.030 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:21:24.048 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 3 tools matching 'search':
+
+
+🔌 Other Integrations:
+  - composio_search (composio_search)
+  - elasticsearch (elasticsearch)
+  - yousearch (yousearch)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:21:24.048 | INFO     | app.agent.base:run:140 - Executing step 2/50
+2025-08-02 16:21:40.590 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2168, Completion=1340, Cumulative Input=4123, Cumulative Completion=2586, Total=3508, Cumulative Total=6709
+2025-08-02 16:21:40.590 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:21:40.591 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:21:40.591 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 16:21:40.591 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_assistant","assistant_config":{"name":"Hackathon Interviewer","firstMessage":"Hi Aaryan! Congratulations on winning the recent San Francisco hackathon! I'd love to do a quick interview about your experience and key learnings.","systemPrompt":"You are a friendly tech journalist interviewing hackathon winners. Ask 5-6 open-ended questions to capture the story: project idea, team dynamics, biggest technical challenge, memorable moment, key takeaways, and advice for future hackers. Speak clearly and wait for the caller to finish before moving to the next question. Conclude by thanking them and wishing them success.","model":"gpt-4","voice":"andrew","temperature":0.7,"maxDurationSeconds":420,"endCallPhrases":["bye","thank you"],"name":"Hackathon Interviewer"}}
+2025-08-02 16:21:40.591 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 16:21:41.608 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Successfully created assistant!
+Assistant ID: 77638503-b75f-42ac-bea9-c165ccf3452f
+Name: Hackathon Interviewer
+Model: gpt-4
+Voice: andrew
+
+Use this assistant_id when creating calls.
+2025-08-02 16:21:41.609 | INFO     | app.agent.base:run:140 - Executing step 3/50
+2025-08-02 16:21:49.321 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2529, Completion=478, Cumulative Input=6652, Cumulative Completion=3064, Total=3007, Cumulative Total=9716
+2025-08-02 16:21:49.322 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:21:49.322 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:21:49.322 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:21:49.322 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"gmail"}
+2025-08-02 16:21:49.322 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:21:49.324 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 2 tools matching 'gmail':
+
+
+📧 Email & Communication:
+  - bigmailer (bigmailer)
+  - gmail (gmail)
+
+
+Use get_tool_info to learn more about a specific tool.
+2025-08-02 16:21:49.324 | INFO     | app.agent.base:run:140 - Executing step 4/50
+2025-08-02 16:21:54.716 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2728, Completion=355, Cumulative Input=9380, Cumulative Completion=3419, Total=3083, Cumulative Total=12799
+2025-08-02 16:21:54.717 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:21:54.717 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:21:54.717 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:21:54.717 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"composio_search"}
+2025-08-02 16:21:54.717 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:21:54.731 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: composio_search (COMPOSIO_SEARCH)
+Category: 🔌 Other Integrations
+
+Available Actions (13):
+  - duck_duck_go_search: search duck duck go search
+  - google_maps_search: search google maps search
+  - event_search: search event search
+  - tools: search tools
+  - scholar_search: search scholar search
+  - exa_similarlink: search exa similarlink
+  - shopping_search: search shopping search
+  - image_search: search image search
+  - finance_search: search finance search
+  - trends_search: search trends search
+  ... and 3 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "composio_search", "action_name": "<action>", "parameters": {...}}
+2025-08-02 16:21:54.732 | INFO     | app.agent.base:run:140 - Executing step 5/50
+2025-08-02 16:21:59.977 | INFO     | app.llm:update_token_count:250 - Token usage: Input=3058, Completion=379, Cumulative Input=12438, Cumulative Completion=3798, Total=3437, Cumulative Total=16236
+2025-08-02 16:21:59.977 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 16:21:59.977 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 16:21:59.977 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 16:21:59.977 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"composio_search","action_name":"duck_duck_go_search","parameters":{"query":"Aaryan Mittal San Francisco hackathon winner phone number"}}
+2025-08-02 16:21:59.977 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 16:22:07.712 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:22:07.713 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 16:22:07.713 | WARNING  | __main__:main:34 - Operation interrupted.
+2025-08-02 16:22:07.713 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 16:22:07.713 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

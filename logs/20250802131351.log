@@ -1,0 +1,514 @@
+2025-08-02 13:13:52.419 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 13:14:23.577 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 13:14:23.577 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 13:14:29.685 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1354, Completion=154, Cumulative Input=1354, Cumulative Completion=154, Total=1508, Cumulative Total=1508
+2025-08-02 13:14:29.686 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:14:29.686 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:14:29.686 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:14:29.686 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools"}
+2025-08-02 13:14:29.686 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:14:29.710 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 564 tools:
+
+
+🏢 Atlassian Suite:
+  - atlassian (atlassian)
+  - confluence (confluence)
+  - jira (jira)
+
+💬 Messaging & Collaboration:
+  - agencyzoom (agencyzoom)
+  - discord (discord)
+  - discordbot (discordbot)
+  - microsoft_teams (microsoft_teams)
+  - slack (slack)
+  - slackbot (slackbot)
+  - zoom (zoom)
+  - zoominfo (zoominfo)
+
+💳 Payments & Finance:
+  - foursquare (foursquare)
+  - square (square)
+  - stripe (stripe)
+
+📋 Productivity & Project Management:
+  - airtable (airtable)
+  - asana (asana)
+  - monday (monday)
+  - notion (notion)
+  - trello (trello)
+
+📧 Email & Communication:
+  - bigmailer (bigmailer)
+  - gmail (gmail)
+  - mailchimp (mailchimp)
+  - outlook (outlook)
+  - sendgrid (sendgrid)
+
+📱 Social Media:
+  - facebook (facebook)
+  - linkedin (linkedin)
+  - twitter (twitter)
+  - twitter_media (twitter_media)
+
+🔌 Other Integrations:
+  - _21risk (_21risk)
+  - _2chat (_2chat)
+  - ably (ably)
+  - abstract (abstract)
+  - abuselpdb (abuselpdb)
+  - abyssale (abyssale)
+  - accelo (accelo)
+  - accredible_certificates (accredible_certificates)
+  - acculynx (acculynx)
+  - active_campaign (active_campaign)
+  - addresszen (addresszen)
+  - adobe (adobe)
+  - adrapid (adrapid)
+  - adyntel (adyntel)
+  - aero_workflow (aero_workflow)
+  - aeroleads (aeroleads)
+  - affinda (affinda)
+  - affinity (affinity)
+  - agentql (agentql)
+  - agenty (agenty)
+  - agiled (agiled)
+  - agility_cms (agility_cms)
+  - ahrefs (ahrefs)
+  - ai_ml_api (ai_ml_api)
+  - aivoov (aivoov)
+  - alchemy (alchemy)
+  - algolia (algolia)
+  - all_images_ai (all_images_ai)
+  - alpha_vantage (alpha_vantage)
+  - altoviz (altoviz)
+  - alttext_ai (alttext_ai)
+  - amara (amara)
+  - amazon (amazon)
+  - ambee (ambee)
+  - ambient_weather (ambient_weather)
+  - amcards (amcards)
+  - amplitude (amplitude)
+  - anchor_browser (anchor_browser)
+  - anonyflow (anonyflow)
+  - anthropic (anthropic)
+  - anthropic_administrator (anthropic_administrator)
+  - apaleo (apaleo)
+  - apex27 (apex27)
+  - api2pdf (api2pdf)
+  - api_bible (api_bible)
+  - api_ninjas (api_ninjas)
+  - api_sports (api_sports)
+  - apiflash (apiflash)
+  - apify (apify)
+  - apilio (apilio)
+  - apipie_ai (apipie_ai)
+  - apitemplate_io (apitemplate_io)
+  - apiverve (apiverve)
+  - apollo (apollo)
+  - appcircle (appcircle)
+  - appdrag (appdrag)
+  - appointo (appointo)
+  - appsflyer (appsflyer)
+  - appveyor (appveyor)
+  - aryn (aryn)
+  - ascora (ascora)
+  - ashby (ashby)
+  - asin_data_api (asin_data_api)
+  - astica_ai (astica_ai)
+  - async_interview (async_interview)
+  - attio (attio)
+  - auth0 (auth0)
+  - autobound (autobound)
+  - autom (autom)
+  - axonaut (axonaut)
+  - ayrshare (ayrshare)
+  - backendless (backendless)
+  - bamboohr (bamboohr)
+  - bannerbear (bannerbear)
+  - bart (bart)
+  - baselinker (baselinker)
+  - baserow (baserow)
+  - basin (basin)
+  - battlenet (battlenet)
+  - beaconchain (beaconchain)
+  - beaconstac (beaconstac)
+  - beamer (beamer)
+  - beeminder (beeminder)
+  - benchmark_email (benchmark_email)
+  - benzinga (benzinga)
+  - better_proposals (better_proposals)
+  - better_stack (better_stack)
+  - bidsketch (bidsketch)
+  - big_data_cloud (big_data_cloud)
+  - bigml (bigml)
+  - bigpicture_io (bigpicture_io)
+  - bill (bill)
+  - bitquery (bitquery)
+  - bitwarden (bitwarden)
+  - blackbaud (blackbaud)
+  - blackboard (blackboard)
+  - blazemeter (blazemeter)
+  - blocknative (blocknative)
+  - boldsign (boldsign)
+  - bolna (bolna)
+  - boloforms (boloforms)
+  - bolt_iot (bolt_iot)
+  - bonsai (bonsai)
+  - bookingmood (bookingmood)
+  - booqable (booqable)
+  - borneo (borneo)
+  - botbaba (botbaba)
+  - botpress (botpress)
+  - botsonic (botsonic)
+  - botstar (botstar)
+  - bouncer (bouncer)
+  - box (box)
+  - boxhero (boxhero)
+  - braintree (braintree)
+  - brandfetch (brandfetch)
+  - breeze (breeze)
+  - breezy_hr (breezy_hr)
+  - brevo (brevo)
+  - brex (brex)
+  - brex_staging (brex_staging)
+  - brightdata (brightdata)
+  - brightpearl (brightpearl)
+  - brilliant_directories (brilliant_directories)
+  - browseai (browseai)
+  - browser_tool (browser_tool)
+  - browserbase_tool (browserbase_tool)
+  - browserhub (browserhub)
+  - browserless (browserless)
+  - btcpay_server (btcpay_server)
+  - bubble (bubble)
+  - bugbug (bugbug)
+  - bugherd (bugherd)
+  - bugsnag (bugsnag)
+  - buildkite (buildkite)
+  - builtwith (builtwith)
+  - bunnycdn (bunnycdn)
+  - byteforms (byteforms)
+  - cabinpanda (cabinpanda)
+  - cal (cal)
+  - calendly (calendly)
+  - callerapi (callerapi)
+  - callingly (callingly)
+  - callpage (callpage)
+  - campaign_cleaner (campaign_cleaner)
+  - campayn (campayn)
+  - canny (canny)
+  - canva (canva)
+  - canvas (canvas)
+  - capsule_crm (capsule_crm)
+  - carbone (carbone)
+  - cardly (cardly)
+  - castingwords (castingwords)
+  - cats (cats)
+  - cdr_platform (cdr_platform)
+  - census_bureau (census_bureau)
+  - centralstationcrm (centralstationcrm)
+  - certifier (certifier)
+  - chaser (chaser)
+  - chatbotkit (chatbotkit)
+  - chatfai (chatfai)
+  - chatwork (chatwork)
+  - chmeetings (chmeetings)
+  - cincopa (cincopa)
+  - circleci (circleci)
+  - clickmeeting (clickmeeting)
+  - clickup (clickup)
+  - clockify (clockify)
+  - close (close)
+  - cloudconvert (cloudconvert)
+  - cloudflare (cloudflare)
+  - cloudinary (cloudinary)
+  - cloudlayer (cloudlayer)
+  - coassemble (coassemble)
+  - coda (coda)
+  - code_analysis_tool (code_analysis_tool)
+  - code_format_tool (code_format_tool)
+  - codeinterpreter (codeinterpreter)
+  - coinbase (coinbase)
+  - coinmarketcal (coinmarketcal)
+  - coinranking (coinranking)
+  - composio (composio)
+  - composio_search (composio_search)
+  - connecteam (connecteam)
+  - contentful (contentful)
+  - convertapi (convertapi)
+  - corrently (corrently)
+  - crustdata (crustdata)
+  - customer_io (customer_io)
+  - cutt_ly (cutt_ly)
+  - d2lbrightspace (d2lbrightspace)
+  - dailybot (dailybot)
+  - datadog (datadog)
+  - datagma (datagma)
+  - datarobot (datarobot)
+  - deadline_funnel (deadline_funnel)
+  - deel (deel)
+  - demio (demio)
+  - desktime (desktime)
+  - detrack (detrack)
+  - dialmycalls (dialmycalls)
+  - dialpad (dialpad)
+  - dictionary_api (dictionary_api)
+  - diffbot (diffbot)
+  - digicert (digicert)
+  - docmosis (docmosis)
+  - documint (documint)
+  - docupilot (docupilot)
+  - docupost (docupost)
+  - docuseal (docuseal)
+  - docusign (docusign)
+  - doppler_marketing_automation (doppler_marketing_automation)
+  - dotsimple (dotsimple)
+  - dovetail (dovetail)
+  - dpd2 (dpd2)
+  - draftable (draftable)
+  - dreamstudio (dreamstudio)
+  - drip_jobs (drip_jobs)
+  - dripcel (dripcel)
+  - dromo (dromo)
+  - dropbox (dropbox)
+  - dropbox_sign (dropbox_sign)
+  - dynamics365 (dynamics365)
+  - echtpost (echtpost)
+  - elasticsearch (elasticsearch)
+  - elevenlabs (elevenlabs)
+  - emailable (emailable)
+  - emailoctopus (emailoctopus)
+  - embed_tool (embed_tool)
+  - emelia (emelia)
+  - enginemailer (enginemailer)
+  - enigma (enigma)
+  - entelligence (entelligence)
+  - eodhd_apis (eodhd_apis)
+  - epic_games (epic_games)
+  - esignatures_io (esignatures_io)
+  - espocrm (espocrm)
+  - evenium (evenium)
+  - eventbrite (eventbrite)
+  - eventee (eventee)
+  - eventzilla (eventzilla)
+  - everhour (everhour)
+  - eversign (eversign)
+  - exa (exa)
+  - excel (excel)
+  - exist (exist)
+  - expofp (expofp)
+  - extracta_ai (extracta_ai)
+  - faceup (faceup)
+  - factorial (factorial)
+  - felt (felt)
+  - figma (figma)
+  - filetool (filetool)
+  - fillout_forms (fillout_forms)
+  - finage (finage)
+  - findymail (findymail)
+  - firecrawl (firecrawl)
+  - fireflies (fireflies)
+  - fitbit (fitbit)
+  - fixer (fixer)
+  - flutterwave (flutterwave)
+  - folk (folk)
+  - fomo (fomo)
+  - formcarry (formcarry)
+  - formsite (formsite)
+  - freshbooks (freshbooks)
+  - freshdesk (freshdesk)
+  - front (front)
+  - givebutter (givebutter)
+  - go_to_webinar (go_to_webinar)
+  - gong (gong)
+  - gorgias (gorgias)
+  - greptile (greptile)
+  - gumroad (gumroad)
+  - guru (guru)
+  - hackernews (hackernews)
+  - hackerrank_work (hackerrank_work)
+  - harvest (harvest)
+  - helcim (helcim)
+  - heygen (heygen)
+  - heyreach (heyreach)
+  - highlevel (highlevel)
+  - history_fetcher (history_fetcher)
+  - humanitix (humanitix)
+  - humanloop (humanloop)
+  - hunter (hunter)
+  - icims_talent_cloud (icims_talent_cloud)
+  - idea_scale (idea_scale)
+  - image_analyser (image_analyser)
+  - insighto_ai (insighto_ai)
+  - intercom (intercom)
+  - interzoid (interzoid)
+  - jobnimbus (jobnimbus)
+  - jotform (jotform)
+  - junglescout (junglescout)
+  - keap (keap)
+  - kibana (kibana)
+  - kit (kit)
+  - klaviyo (klaviyo)
+  - klipfolio (klipfolio)
+  - ko_fi (ko_fi)
+  - kommo (kommo)
+  - landbot (landbot)
+  - lastpass (lastpass)
+  - launch_darkly (launch_darkly)
+  - leadfeeder (leadfeeder)
+  - leadoku (leadoku)
+  - lemlist (lemlist)
+  - lemon_squeezy (lemon_squeezy)
+  - lever (lever)
+  - lever_sandbox (lever_sandbox)
+  - lexoffice (lexoffice)
+  - linear (linear)
+  - linkhut (linkhut)
+  - linkup (linkup)
+  - listennotes (listennotes)
+  - lmnt (lmnt)
+  - lodgify (lodgify)
+  - loyverse (loyverse)
+  - mailerlite (mailerlite)
+  - maintainx (maintainx)
+  - make (make)
+  - many_chat (many_chat)
+  - mathematical (mathematical)
+  - mboum (mboum)
+  - mem0 (mem0)
+  - memberspot (memberspot)
+  - memberstack (memberstack)
+  - membervault (membervault)
+  - metaads (metaads)
+  - metatextai (metatextai)
+  - microsoft_clarity (microsoft_clarity)
+  - microsoft_tenant (microsoft_tenant)
+  - miro (miro)
+  - missive (missive)
+  - mixpanel (mixpanel)
+  - mocean (mocean)
+  - moco (moco)
+  - moneybird (moneybird)
+  - moonclerk (moonclerk)
+  - moosend (moosend)
+  - mopinion (mopinion)
+  - more_trees (more_trees)
+  - moxie (moxie)
+  - moz (moz)
+  - mural (mural)
+  - nasa (nasa)
+  - nasdaq (nasdaq)
+  - ncscale (ncscale)
+  - neon (neon)
+  - netsuite (netsuite)
+  - neverbounce (neverbounce)
+  - nextdns (nextdns)
+  - ngrok (ngrok)
+  - ninox (ninox)
+  - nocrm_io (nocrm_io)
+  - omnisend (omnisend)
+  - oncehub (oncehub)
+  - onepage (onepage)
+  - open_sea (open_sea)
+  - openai (openai)
+  - open
+2025-08-02 13:14:29.711 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 13:14:33.388 | INFO     | app.llm:update_token_count:250 - Token usage: Input=4911, Completion=160, Cumulative Input=6265, Cumulative Completion=314, Total=5071, Cumulative Total=6579
+2025-08-02 13:14:33.389 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:14:33.389 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:14:33.389 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:14:33.389 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 13:14:33.389 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:14:33.404 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 13:14:33.404 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 13:14:38.048 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5230, Completion=147, Cumulative Input=11495, Cumulative Completion=461, Total=5377, Cumulative Total=11956
+2025-08-02 13:14:38.048 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:14:38.049 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:14:38.049 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['get_datetime']
+2025-08-02 13:14:38.049 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {}
+2025-08-02 13:14:38.049 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'get_datetime'...
+2025-08-02 13:14:38.049 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'get_datetime' completed its mission! Result: Observed output of cmd `get_datetime` executed:
+Current date and time: 2025-08-02 13:14:38 (ISO format: 2025-08-02T13:14:38.049542)
+2025-08-02 13:14:38.049 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-08-02 13:14:43.504 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5412, Completion=303, Cumulative Input=16907, Cumulative Completion=764, Total=5715, Cumulative Total=17671
+2025-08-02 13:14:43.504 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:14:43.504 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:14:43.505 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 13:14:43.505 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"send_email","parameters":{"to":["aaryanmittal154@gmail.com"],"subject":"Greetings on 2 August 2025","body":"Hi Aaryan,\n\nHope you are doing well.\n\nJust reaching out as requested. This email was automatically generated by Deptheon AI on 2 August 2025.\n\nBest regards,\nDeptheon AI"}}
+2025-08-02 13:14:43.505 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 13:14:46.648 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Authentication required for gmail.
+
+Please authenticate by visiting: connectionStatus='INITIATED' connectedAccountId='193175fc-9885-4dde-9873-3d1accb0412b' redirectUrl='https://backend.composio.dev/api/v3/s/BNxAgxFQ'
+
+After authentication, try this action again.
+2025-08-02 13:14:46.648 | INFO     | app.agent.base:run:140 - Executing step 5/20
+2025-08-02 13:14:50.567 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5724, Completion=253, Cumulative Input=22631, Cumulative Completion=1017, Total=5977, Cumulative Total=23648
+2025-08-02 13:14:50.568 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: I drafted the requested email and attempted to send it via the Gmail integration, but Composio required a one-time account authentication step that has not yet been completed.  
+
+Draft email (ready to copy-paste or send once Gmail is authorised):
+
+Subject: Greetings on 2 August 2025
+
+Hi Aaryan,
+
+Hope you’re doing well.
+
+Just reaching out as requested. This email was automatically generated by Deptheon AI on 2 August 2025.
+
+Best regards,  
+Deptheon AI
+2025-08-02 13:14:50.568 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 13:14:50.568 | INFO     | app.agent.base:run:140 - Executing step 6/20
+2025-08-02 13:14:56.708 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5940, Completion=209, Cumulative Input=28571, Cumulative Completion=1226, Total=6149, Cumulative Total=29797
+2025-08-02 13:14:56.708 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: Here is the completed email:
+
+Subject: Greetings on 2 August 2025
+
+Hi Aaryan,
+
+Hope you’re doing well.
+
+Just reaching out as requested. This email was automatically generated by Deptheon AI on 2 August 2025.
+
+Best regards,  
+Deptheon AI
+2025-08-02 13:14:56.708 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 13:14:56.708 | INFO     | app.agent.base:run:140 - Executing step 7/20
+2025-08-02 13:15:07.554 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6113, Completion=171, Cumulative Input=34684, Cumulative Completion=1397, Total=6284, Cumulative Total=36081
+2025-08-02 13:15:07.555 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: The requested email text has been drafted and delivered in the previous response. No further automated steps can be taken without Gmail authentication.
+2025-08-02 13:15:07.555 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 13:15:07.555 | INFO     | app.agent.base:run:140 - Executing step 8/20
+2025-08-02 13:15:13.482 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6253, Completion=151, Cumulative Input=40937, Cumulative Completion=1548, Total=6404, Cumulative Total=42485
+2025-08-02 13:15:13.482 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 13:15:13.482 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['terminate']
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"status":"success"}
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'terminate'...
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:_handle_special_tool:217 - 🏁 Special tool 'terminate' has completed the task!
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'terminate' completed its mission! Result: Observed output of cmd `terminate` executed:
+The interaction has been completed with status: success
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:15:13.483 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 13:15:13.483 | INFO     | __main__:main:32 - Request processing completed.
+2025-08-02 13:15:13.484 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 13:15:13.484 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

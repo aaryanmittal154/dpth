@@ -1,0 +1,27 @@
+# Core dependencies
+pydantic>=2.0.0
+aiofiles
+asyncio
+python-dotenv
+
+# LLM providers
+openai>=1.0.0
+langchain>=0.1.0
+
+# Tool integrations
+composio-core>=0.7.0  # For dynamic tool access to 3000+ integrations
+vapi-server-sdk>=0.8.0  # For AI-powered voice calling capabilities
+
+# Development tools
+pytest>=7.0.0
+pytest-asyncio
+black
+flake8
+python-dotenv>=0.19.0
+
+# Sandbox/execution environment
+docker>=6.0.0
+
+# Logging and monitoring
+colorlog
+rich

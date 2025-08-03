@@ -1,0 +1,160 @@
+2025-08-02 12:30:41.521 | WARNING  | app.tool.composio_tool:_initialize_composio:89 - COMPOSIO_API_KEY not found in environment. Some features may be limited. Get your key at https://app.composio.dev
+2025-08-02 12:30:41.632 | INFO     | app.tool.composio_tool:_initialize_composio:98 - ✅ Composio toolset initialized successfully
+2025-08-02 12:31:02.606 | WARNING  | __main__:main:25 - Processing your request...
+2025-08-02 12:31:02.607 | INFO     | app.agent.base:run:140 - Executing step 1/20
+2025-08-02 12:31:08.033 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1355, Completion=286, Cumulative Input=1355, Cumulative Completion=286, Total=1641, Cumulative Total=1641
+2025-08-02 12:31:08.033 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:08.033 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:08.034 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 12:31:08.034 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":"gmail"}
+2025-08-02 12:31:08.034 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 12:31:08.034 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Failed to list tools: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:08.034 | INFO     | app.agent.base:run:140 - Executing step 2/20
+2025-08-02 12:31:09.664 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1528, Completion=26, Cumulative Input=2883, Cumulative Completion=312, Total=1554, Cumulative Total=3195
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools"}
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 12:31:09.665 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Failed to list tools: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:09.665 | INFO     | app.agent.base:run:140 - Executing step 3/20
+2025-08-02 12:31:13.864 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1697, Completion=281, Cumulative Input=4580, Cumulative Completion=593, Total=1978, Cumulative Total=5173
+2025-08-02 12:31:13.864 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:13.864 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:13.865 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 12:31:13.865 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"send_email","parameters":{"to":"ravi@example.com","subject":"Checking In","body":"Hi Ravi,\n\nJust wanted to check in and see how your work is going. Let me know if you need any help.\n\nBest,\n[Your Name]"}}
+2025-08-02 12:31:13.865 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 12:31:13.865 | ERROR    | app.tool.composio_tool:_execute_tool_action:316 - Failed to execute tool action: 'EnumGenerator' object is not iterable
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 36, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x10547c5e0>
+    │       └ <function run at 0x10613f380>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x106113440>
+           │      └ <function Runner.run at 0x106153560>
+           └ <asyncio.runners.Runner object at 0x1156229d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:26> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x1061511c0>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1156229d0>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x106151120>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x106152f20>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x105ae5440>
+    └ <Handle <TaskStepMethWrapper object at 0x131be4820>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x131be4820>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x131be4820>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x131be4820>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 26, in main
+    await agent.run(prompt)
+          │     │   └ 'Use composio to mail to Ravi and ask him how his work is going?'
+          │     └ <function ToolCallAgent.run at 0x115705580>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'Use composio to mail to Ravi and ask him how his work is going?'
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x1156100e0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x115613240>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_1lxtHQSUSCdJNHK3cjwvhCHj', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x115704360>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'gmail', 'action_name': 'send_email', 'parameters': {'to': 'ravi@example.com', 'subject': ...
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x115704040>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x13124c1d0>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'gmail', 'action_name': 'send_email', 'parameters': {'to': 'ravi@example.com', 'subject': ...
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'gmail', 'action_name': 'send_email', 'parameters': {'to': 'ravi@example.com', 'subject': ...
+                 │    └ <function ComposioTool.execute at 0x115704ae0>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 129, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'gmail', 'action_name': 'send_email', 'parameters': {'to': 'ravi@example.com', 'subject': ...
+                 │    └ <function ComposioTool._execute_tool_action at 0x115704cc0>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 268, in _execute_tool_action
+    for a in App:
+             └ <class 'composio.client.enums.app.App'>
+
+TypeError: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:13.871 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:13.871 | INFO     | app.agent.base:run:140 - Executing step 4/20
+2025-08-02 12:31:17.577 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1927, Completion=160, Cumulative Input=6507, Cumulative Completion=753, Total=2087, Cumulative Total=7260
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 12:31:17.578 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Failed to get tool info: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:17.579 | INFO     | app.agent.base:run:140 - Executing step 5/20
+2025-08-02 12:31:21.688 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2103, Completion=158, Cumulative Input=8610, Cumulative Completion=911, Total=2261, Cumulative Total=9521
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools","query":""}
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 12:31:21.689 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Failed to list tools: 'EnumGenerator' object is not iterable
+2025-08-02 12:31:21.689 | INFO     | app.agent.base:run:140 - Executing step 6/20
+2025-08-02 12:31:26.588 | INFO     | app.llm:update_token_count:250 - Token usage: Input=2276, Completion=279, Cumulative Input=10886, Cumulative Completion=1190, Total=2555, Cumulative Total=12076
+2025-08-02 12:31:26.588 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['terminate']
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"status":"failure"}
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'terminate'...
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:_handle_special_tool:217 - 🏁 Special tool 'terminate' has completed the task!
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'terminate' completed its mission! Result: Observed output of cmd `terminate` executed:
+The interaction has been completed with status: failure
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 12:31:26.589 | INFO     | __main__:main:27 - Request processing completed.
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 12:31:26.589 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.

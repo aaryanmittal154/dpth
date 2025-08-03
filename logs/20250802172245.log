@@ -1,0 +1,927 @@
+2025-08-02 17:22:45.946 | INFO     | app.tool.composio_tool:_initialize_composio:159 - ✅ Composio toolset initialized successfully
+2025-08-02 17:22:47.768 | INFO     | app.tool.vapi_tool:_initialize_vapi:149 - Vapi client initialized successfully
+2025-08-02 17:23:07.565 | WARNING  | __main__:main:30 - Processing your request...
+2025-08-02 17:23:07.566 | INFO     | app.agent.base:run:140 - Executing step 1/50
+2025-08-02 17:23:17.385 | INFO     | app.llm:update_token_count:250 - Token usage: Input=1456, Completion=410, Cumulative Input=1456, Cumulative Completion=410, Total=1866, Cumulative Total=1866
+2025-08-02 17:23:17.385 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:17.385 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:17.385 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:23:17.385 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_tools"}
+2025-08-02 17:23:17.386 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:23:17.457 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Found 564 tools:
+
+
+🏢 Atlassian Suite:
+  - atlassian (atlassian)
+  - confluence (confluence)
+  - jira (jira)
+
+💬 Messaging & Collaboration:
+  - agencyzoom (agencyzoom)
+  - discord (discord)
+  - discordbot (discordbot)
+  - microsoft_teams (microsoft_teams)
+  - slack (slack)
+  - slackbot (slackbot)
+  - zoom (zoom)
+  - zoominfo (zoominfo)
+
+💳 Payments & Finance:
+  - foursquare (foursquare)
+  - square (square)
+  - stripe (stripe)
+
+📋 Productivity & Project Management:
+  - airtable (airtable)
+  - asana (asana)
+  - monday (monday)
+  - notion (notion)
+  - trello (trello)
+
+📧 Email & Communication:
+  - bigmailer (bigmailer)
+  - gmail (gmail)
+  - mailchimp (mailchimp)
+  - outlook (outlook)
+  - sendgrid (sendgrid)
+
+📱 Social Media:
+  - facebook (facebook)
+  - linkedin (linkedin)
+  - twitter (twitter)
+  - twitter_media (twitter_media)
+
+🔌 Other Integrations:
+  - _21risk (_21risk)
+  - _2chat (_2chat)
+  - ably (ably)
+  - abstract (abstract)
+  - abuselpdb (abuselpdb)
+  - abyssale (abyssale)
+  - accelo (accelo)
+  - accredible_certificates (accredible_certificates)
+  - acculynx (acculynx)
+  - active_campaign (active_campaign)
+  - addresszen (addresszen)
+  - adobe (adobe)
+  - adrapid (adrapid)
+  - adyntel (adyntel)
+  - aero_workflow (aero_workflow)
+  - aeroleads (aeroleads)
+  - affinda (affinda)
+  - affinity (affinity)
+  - agentql (agentql)
+  - agenty (agenty)
+  - agiled (agiled)
+  - agility_cms (agility_cms)
+  - ahrefs (ahrefs)
+  - ai_ml_api (ai_ml_api)
+  - aivoov (aivoov)
+  - alchemy (alchemy)
+  - algolia (algolia)
+  - all_images_ai (all_images_ai)
+  - alpha_vantage (alpha_vantage)
+  - altoviz (altoviz)
+  - alttext_ai (alttext_ai)
+  - amara (amara)
+  - amazon (amazon)
+  - ambee (ambee)
+  - ambient_weather (ambient_weather)
+  - amcards (amcards)
+  - amplitude (amplitude)
+  - anchor_browser (anchor_browser)
+  - anonyflow (anonyflow)
+  - anthropic (anthropic)
+  - anthropic_administrator (anthropic_administrator)
+  - apaleo (apaleo)
+  - apex27 (apex27)
+  - api2pdf (api2pdf)
+  - api_bible (api_bible)
+  - api_ninjas (api_ninjas)
+  - api_sports (api_sports)
+  - apiflash (apiflash)
+  - apify (apify)
+  - apilio (apilio)
+  - apipie_ai (apipie_ai)
+  - apitemplate_io (apitemplate_io)
+  - apiverve (apiverve)
+  - apollo (apollo)
+  - appcircle (appcircle)
+  - appdrag (appdrag)
+  - appointo (appointo)
+  - appsflyer (appsflyer)
+  - appveyor (appveyor)
+  - aryn (aryn)
+  - ascora (ascora)
+  - ashby (ashby)
+  - asin_data_api (asin_data_api)
+  - astica_ai (astica_ai)
+  - async_interview (async_interview)
+  - attio (attio)
+  - auth0 (auth0)
+  - autobound (autobound)
+  - autom (autom)
+  - axonaut (axonaut)
+  - ayrshare (ayrshare)
+  - backendless (backendless)
+  - bamboohr (bamboohr)
+  - bannerbear (bannerbear)
+  - bart (bart)
+  - baselinker (baselinker)
+  - baserow (baserow)
+  - basin (basin)
+  - battlenet (battlenet)
+  - beaconchain (beaconchain)
+  - beaconstac (beaconstac)
+  - beamer (beamer)
+  - beeminder (beeminder)
+  - benchmark_email (benchmark_email)
+  - benzinga (benzinga)
+  - better_proposals (better_proposals)
+  - better_stack (better_stack)
+  - bidsketch (bidsketch)
+  - big_data_cloud (big_data_cloud)
+  - bigml (bigml)
+  - bigpicture_io (bigpicture_io)
+  - bill (bill)
+  - bitquery (bitquery)
+  - bitwarden (bitwarden)
+  - blackbaud (blackbaud)
+  - blackboard (blackboard)
+  - blazemeter (blazemeter)
+  - blocknative (blocknative)
+  - boldsign (boldsign)
+  - bolna (bolna)
+  - boloforms (boloforms)
+  - bolt_iot (bolt_iot)
+  - bonsai (bonsai)
+  - bookingmood (bookingmood)
+  - booqable (booqable)
+  - borneo (borneo)
+  - botbaba (botbaba)
+  - botpress (botpress)
+  - botsonic (botsonic)
+  - botstar (botstar)
+  - bouncer (bouncer)
+  - box (box)
+  - boxhero (boxhero)
+  - braintree (braintree)
+  - brandfetch (brandfetch)
+  - breeze (breeze)
+  - breezy_hr (breezy_hr)
+  - brevo (brevo)
+  - brex (brex)
+  - brex_staging (brex_staging)
+  - brightdata (brightdata)
+  - brightpearl (brightpearl)
+  - brilliant_directories (brilliant_directories)
+  - browseai (browseai)
+  - browser_tool (browser_tool)
+  - browserbase_tool (browserbase_tool)
+  - browserhub (browserhub)
+  - browserless (browserless)
+  - btcpay_server (btcpay_server)
+  - bubble (bubble)
+  - bugbug (bugbug)
+  - bugherd (bugherd)
+  - bugsnag (bugsnag)
+  - buildkite (buildkite)
+  - builtwith (builtwith)
+  - bunnycdn (bunnycdn)
+  - byteforms (byteforms)
+  - cabinpanda (cabinpanda)
+  - cal (cal)
+  - calendly (calendly)
+  - callerapi (callerapi)
+  - callingly (callingly)
+  - callpage (callpage)
+  - campaign_cleaner (campaign_cleaner)
+  - campayn (campayn)
+  - canny (canny)
+  - canva (canva)
+  - canvas (canvas)
+  - capsule_crm (capsule_crm)
+  - carbone (carbone)
+  - cardly (cardly)
+  - castingwords (castingwords)
+  - cats (cats)
+  - cdr_platform (cdr_platform)
+  - census_bureau (census_bureau)
+  - centralstationcrm (centralstationcrm)
+  - certifier (certifier)
+  - chaser (chaser)
+  - chatbotkit (chatbotkit)
+  - chatfai (chatfai)
+  - chatwork (chatwork)
+  - chmeetings (chmeetings)
+  - cincopa (cincopa)
+  - circleci (circleci)
+  - clickmeeting (clickmeeting)
+  - clickup (clickup)
+  - clockify (clockify)
+  - close (close)
+  - cloudconvert (cloudconvert)
+  - cloudflare (cloudflare)
+  - cloudinary (cloudinary)
+  - cloudlayer (cloudlayer)
+  - coassemble (coassemble)
+  - coda (coda)
+  - code_analysis_tool (code_analysis_tool)
+  - code_format_tool (code_format_tool)
+  - codeinterpreter (codeinterpreter)
+  - coinbase (coinbase)
+  - coinmarketcal (coinmarketcal)
+  - coinranking (coinranking)
+  - composio (composio)
+  - composio_search (composio_search)
+  - connecteam (connecteam)
+  - contentful (contentful)
+  - convertapi (convertapi)
+  - corrently (corrently)
+  - crustdata (crustdata)
+  - customer_io (customer_io)
+  - cutt_ly (cutt_ly)
+  - d2lbrightspace (d2lbrightspace)
+  - dailybot (dailybot)
+  - datadog (datadog)
+  - datagma (datagma)
+  - datarobot (datarobot)
+  - deadline_funnel (deadline_funnel)
+  - deel (deel)
+  - demio (demio)
+  - desktime (desktime)
+  - detrack (detrack)
+  - dialmycalls (dialmycalls)
+  - dialpad (dialpad)
+  - dictionary_api (dictionary_api)
+  - diffbot (diffbot)
+  - digicert (digicert)
+  - docmosis (docmosis)
+  - documint (documint)
+  - docupilot (docupilot)
+  - docupost (docupost)
+  - docuseal (docuseal)
+  - docusign (docusign)
+  - doppler_marketing_automation (doppler_marketing_automation)
+  - dotsimple (dotsimple)
+  - dovetail (dovetail)
+  - dpd2 (dpd2)
+  - draftable (draftable)
+  - dreamstudio (dreamstudio)
+  - drip_jobs (drip_jobs)
+  - dripcel (dripcel)
+  - dromo (dromo)
+  - dropbox (dropbox)
+  - dropbox_sign (dropbox_sign)
+  - dynamics365 (dynamics365)
+  - echtpost (echtpost)
+  - elasticsearch (elasticsearch)
+  - elevenlabs (elevenlabs)
+  - emailable (emailable)
+  - emailoctopus (emailoctopus)
+  - embed_tool (embed_tool)
+  - emelia (emelia)
+  - enginemailer (enginemailer)
+  - enigma (enigma)
+  - entelligence (entelligence)
+  - eodhd_apis (eodhd_apis)
+  - epic_games (epic_games)
+  - esignatures_io (esignatures_io)
+  - espocrm (espocrm)
+  - evenium (evenium)
+  - eventbrite (eventbrite)
+  - eventee (eventee)
+  - eventzilla (eventzilla)
+  - everhour (everhour)
+  - eversign (eversign)
+  - exa (exa)
+  - excel (excel)
+  - exist (exist)
+  - expofp (expofp)
+  - extracta_ai (extracta_ai)
+  - faceup (faceup)
+  - factorial (factorial)
+  - felt (felt)
+  - figma (figma)
+  - filetool (filetool)
+  - fillout_forms (fillout_forms)
+  - finage (finage)
+  - findymail (findymail)
+  - firecrawl (firecrawl)
+  - fireflies (fireflies)
+  - fitbit (fitbit)
+  - fixer (fixer)
+  - flutterwave (flutterwave)
+  - folk (folk)
+  - fomo (fomo)
+  - formcarry (formcarry)
+  - formsite (formsite)
+  - freshbooks (freshbooks)
+  - freshdesk (freshdesk)
+  - front (front)
+  - givebutter (givebutter)
+  - go_to_webinar (go_to_webinar)
+  - gong (gong)
+  - gorgias (gorgias)
+  - greptile (greptile)
+  - gumroad (gumroad)
+  - guru (guru)
+  - hackernews (hackernews)
+  - hackerrank_work (hackerrank_work)
+  - harvest (harvest)
+  - helcim (helcim)
+  - heygen (heygen)
+  - heyreach (heyreach)
+  - highlevel (highlevel)
+  - history_fetcher (history_fetcher)
+  - humanitix (humanitix)
+  - humanloop (humanloop)
+  - hunter (hunter)
+  - icims_talent_cloud (icims_talent_cloud)
+  - idea_scale (idea_scale)
+  - image_analyser (image_analyser)
+  - insighto_ai (insighto_ai)
+  - intercom (intercom)
+  - interzoid (interzoid)
+  - jobnimbus (jobnimbus)
+  - jotform (jotform)
+  - junglescout (junglescout)
+  - keap (keap)
+  - kibana (kibana)
+  - kit (kit)
+  - klaviyo (klaviyo)
+  - klipfolio (klipfolio)
+  - ko_fi (ko_fi)
+  - kommo (kommo)
+  - landbot (landbot)
+  - lastpass (lastpass)
+  - launch_darkly (launch_darkly)
+  - leadfeeder (leadfeeder)
+  - leadoku (leadoku)
+  - lemlist (lemlist)
+  - lemon_squeezy (lemon_squeezy)
+  - lever (lever)
+  - lever_sandbox (lever_sandbox)
+  - lexoffice (lexoffice)
+  - linear (linear)
+  - linkhut (linkhut)
+  - linkup (linkup)
+  - listennotes (listennotes)
+  - lmnt (lmnt)
+  - lodgify (lodgify)
+  - loyverse (loyverse)
+  - mailerlite (mailerlite)
+  - maintainx (maintainx)
+  - make (make)
+  - many_chat (many_chat)
+  - mathematical (mathematical)
+  - mboum (mboum)
+  - mem0 (mem0)
+  - memberspot (memberspot)
+  - memberstack (memberstack)
+  - membervault (membervault)
+  - metaads (metaads)
+  - metatextai (metatextai)
+  - microsoft_clarity (microsoft_clarity)
+  - microsoft_tenant (microsoft_tenant)
+  - miro (miro)
+  - missive (missive)
+  - mixpanel (mixpanel)
+  - mocean (mocean)
+  - moco (moco)
+  - moneybird (moneybird)
+  - moonclerk (moonclerk)
+  - moosend (moosend)
+  - mopinion (mopinion)
+  - more_trees (more_trees)
+  - moxie (moxie)
+  - moz (moz)
+  - mural (mural)
+  - nasa (nasa)
+  - nasdaq (nasdaq)
+  - ncscale (ncscale)
+  - neon (neon)
+  - netsuite (netsuite)
+  - neverbounce (neverbounce)
+  - nextdns (nextdns)
+  - ngrok (ngrok)
+  - ninox (ninox)
+  - nocrm_io (nocrm_io)
+  - omnisend (omnisend)
+  - oncehub (oncehub)
+  - onepage (onepage)
+  - open_sea (open_sea)
+  - openai (openai)
+  - open
+2025-08-02 17:23:17.457 | INFO     | app.agent.base:run:140 - Executing step 2/50
+2025-08-02 17:23:24.682 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5013, Completion=370, Cumulative Input=6469, Cumulative Completion=780, Total=5383, Cumulative Total=7249
+2025-08-02 17:23:24.683 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:24.684 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:24.684 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:23:24.684 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"exa","action_name":"search","query":"\"Agents in the Loop\" hackathon 2025 winner"}
+2025-08-02 17:23:24.684 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:23:26.651 | ERROR    | app.tool.composio_tool:_execute_tool_action:434 - Failed to execute tool action: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"7d9a0b8e-b725-41b0-99f1-2c6ca2ad73de","suggested_fix":""}}}
+Traceback (most recent call last):
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 41, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x1030ed3a0>
+    │       └ <function run at 0x1036672e0>
+    └ <module 'asyncio' from '/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x103759d40>
+           │      └ <function Runner.run at 0x10367b4c0>
+           └ <asyncio.runners.Runner object at 0x107008a10>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/aaryanmittal/ef-hackathon/main.py:31> cb=[_run_until_complete_cb()...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x103679120>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x107008a10>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x103679080>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x10367ae80>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1035d13a0>
+    └ <Handle <TaskStepMethWrapper object at 0x14ff24e50>()>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x14ff24e50>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x14ff24e50>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x14ff24e50>()>
+
+  File "/Users/aaryanmittal/ef-hackathon/main.py", line 31, in main
+    await agent.run(prompt)
+          │     │   └ 'My friend Aaryan recently won the Agents in the loop hackathon. I wouuld like you to do a search on the hackathon, and if th...
+          │     └ <function ToolCallAgent.run at 0x1070cf380>
+          └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 248, in run
+    return await super().run(request)
+                             └ 'My friend Aaryan recently won the Agents in the loop hackathon. I wouuld like you to do a search on the hackathon, and if th...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/base.py", line 141, in run
+    step_result = await self.step()
+                        │    └ <function ReActAgent.step at 0x106da2fc0>
+                        └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/react.py", line 38, in step
+    return await self.act()
+                 │    └ <function ToolCallAgent.act at 0x1070cc2c0>
+                 └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 145, in act
+    result = await self.execute_tool(command)
+                   │    │            └ ChatCompletionMessageToolCall(id='call_MZNWFyJXFZEgW8rEh9qoCQNN', function=Function(arguments='{"action":"execute","tool_name...
+                   │    └ <function ToolCallAgent.execute_tool at 0x1070ce660>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/agent/toolcall.py", line 181, in execute_tool
+    result = await self.available_tools.execute(name=name, tool_input=args)
+                   │    │               │            │                └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'search', 'query': '"Agents in the Loop" hackathon 2025 winner'}
+                   │    │               │            └ 'composio_tool'
+                   │    │               └ <function ToolCollection.execute at 0x1070cdc60>
+                   │    └ <app.tool.tool_collection.ToolCollection object at 0x10eb0bc50>
+                   └ Deptheon(name='Deptheon', description='A versatile agent that can solve various tasks using multiple tools', system_prompt="Y...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/tool_collection.py", line 32, in execute
+    result = await tool(**tool_input)
+                   │      └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'search', 'query': '"Agents in the Loop" hackathon 2025 winner'}
+                   └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/base.py", line 17, in __call__
+    return await self.execute(**kwargs)
+                 │    │         └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'search', 'query': '"Agents in the Loop" hackathon 2025 winner'}
+                 │    └ <function ComposioTool.execute at 0x1070cc400>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+  File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 190, in execute
+    return await self._execute_tool_action(kwargs)
+                 │    │                    └ {'action': 'execute', 'tool_name': 'exa', 'action_name': 'search', 'query': '"Agents in the Loop" hackathon 2025 winner'}
+                 │    └ <function ComposioTool._execute_tool_action at 0x1070ce0c0>
+                 └ ComposioTool(name='composio_tool', description='Access and execute tools from Composio\'s platform of 3000+ integrations.\n\n...
+
+> File "/Users/aaryanmittal/ef-hackathon/app/tool/composio_tool.py", line 393, in _execute_tool_action
+    auth_url = entity.initiate_connection(app.slug.lower())
+               │      │                   │   │    └ <method 'lower' of 'str' objects>
+               │      │                   │   └ 'EXA'
+               │      │                   └ App.EXA
+               │      └ <function Entity.initiate_connection at 0x10dd3e3e0>
+               └ <composio.client.Entity object at 0x13ab50b50>
+
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/__init__.py", line 465, in initiate_connection
+    integration = self.client.integrations.create(
+                  │    │      │            └ <function Integrations.create at 0x10dd3cd60>
+                  │    │      └ <composio.client.collections.Integrations object at 0x10e660d10>
+                  │    └ <composio.client.Composio object at 0x10dbebc10>
+                  └ <composio.client.Entity object at 0x13ab50b50>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/collections.py", line 1554, in create
+    response = self._raise_if_required(
+               │    └ <function Collection._raise_if_required at 0x10dbc6840>
+               └ <composio.client.collections.Integrations object at 0x10e660d10>
+  File "/Users/aaryanmittal/miniconda3/lib/python3.11/site-packages/composio/client/base.py", line 48, in _raise_if_required
+    raise HTTPError(
+          └ <class 'composio.exceptions.HTTPError'>
+
+composio.exceptions.HTTPError: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"7d9a0b8e-b725-41b0-99f1-2c6ca2ad73de","suggested_fix":""}}}
+2025-08-02 17:23:26.662 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Execution failed: {"error":"Failed to create auth config","details":{"error":{"message":"Default auth config not found","code":302,"status":400,"request_id":"7d9a0b8e-b725-41b0-99f1-2c6ca2ad73de","suggested_fix":""}}}
+2025-08-02 17:23:26.663 | INFO     | app.agent.base:run:140 - Executing step 3/50
+2025-08-02 17:23:33.047 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5263, Completion=367, Cumulative Input=11732, Cumulative Completion=1147, Total=5630, Cumulative Total=12879
+2025-08-02 17:23:33.048 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:33.048 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:33.048 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:23:33.048 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import requests, re, textwrap, sys, json, bs4, datetime, os, html\nprint('starting')"}
+2025-08-02 17:23:33.048 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:23:34.734 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': 'starting\n', 'success': True}
+2025-08-02 17:23:34.735 | INFO     | app.agent.base:run:140 - Executing step 4/50
+2025-08-02 17:23:42.478 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5447, Completion=527, Cumulative Input=17179, Cumulative Completion=1674, Total=5974, Cumulative Total=18853
+2025-08-02 17:23:42.478 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:42.478 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:42.479 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:23:42.479 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import requests, json, re, textwrap, html\nquery='Agents in the Loop hackathon Aaryan Mittal winner'\nurl=f'https://duckduckgo.com/?q={requests.utils.quote(query)}&t=h_&ia=web'\nprint(url)"}
+2025-08-02 17:23:42.479 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:23:43.802 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': 'https://duckduckgo.com/?q=Agents%20in%20the%20Loop%20hackathon%20Aaryan%20Mittal%20winner&t=h_&ia=web\n', 'success': True}
+2025-08-02 17:23:43.803 | INFO     | app.agent.base:run:140 - Executing step 5/50
+2025-08-02 17:23:53.682 | INFO     | app.llm:update_token_count:250 - Token usage: Input=5704, Completion=678, Cumulative Input=22883, Cumulative Completion=2352, Total=6382, Cumulative Total=25235
+2025-08-02 17:23:53.682 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:53.684 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:53.684 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:23:53.684 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"create_call","phone_number":"+14156056693","assistant_config":{"name":"Hackathon Interviewer","firstMessage":"Hi Aaryan, congratulations on winning the Agents in the Loop hackathon! I'd love to ask you a few questions about your experience. Is now a good time?","systemPrompt":"You are calling Aaryan Mittal, the recent winner of the Agents in the Loop hackathon. Your goal is to conduct an interview and collect his answers. Ask the following questions one by one, waiting for his response before proceeding to the next question:\n1. Could you briefly describe the project that won the hackathon?\n2. What inspired you to build this project?\n3. What was the biggest technical challenge you faced and how did you overcome it?\n4. How did you incorporate agents-in-the-loop concepts into your solution?\n5. How do you see this project evolving in the future?\n6. Do you have any advice for future hackathon participants?\nAfter the final question, thank him warmly and end the call.\nMake the conversation friendly and professional. Capture his answers verbatim.","model":"gpt-4o-mini","voice":"andrew","temperature":0.4,"maxDurationSeconds":480,"endCallPhrases":["bye","goodbye","talk to you later"]}}
+2025-08-02 17:23:53.684 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:23:53.684 | INFO     | app.tool.vapi_tool:_create_call:315 - Creating call with config: {'customer': {'number': '+14156056693'}, 'assistant': {'firstMessage': "Hi Aaryan, congratulations on winning the Agents in the Loop hackathon! I'd love to ask you a few questions about your experience. Is now a good time?", 'model': {'provider': 'openai', 'model': 'gpt-4o-mini', 'messages': [{'role': 'system', 'content': 'You are calling Aaryan Mittal, the recent winner of the Agents in the Loop hackathon. Your goal is to conduct an interview and collect his answers. Ask the following questions one by one, waiting for his response before proceeding to the next question:\n1. Could you briefly describe the project that won the hackathon?\n2. What inspired you to build this project?\n3. What was the biggest technical challenge you faced and how did you overcome it?\n4. How did you incorporate agents-in-the-loop concepts into your solution?\n5. How do you see this project evolving in the future?\n6. Do you have any advice for future hackathon participants?\nAfter the final question, thank him warmly and end the call.\nMake the conversation friendly and professional. Capture his answers verbatim.'}], 'temperature': 0.4}, 'voice': {'provider': 'azure', 'voiceId': 'andrew'}, 'maxDurationSeconds': 480, 'endCallPhrases': ['bye', 'goodbye', 'talk to you later']}, 'phone_number_id': 'b682acaa-936b-4bb4-b5a5-c523148e12da'}
+2025-08-02 17:23:54.016 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Successfully created call!
+Call ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: queued
+To: +14156056693
+
+2025-08-02 17:23:54.016 | INFO     | app.agent.base:run:140 - Executing step 6/50
+2025-08-02 17:23:56.558 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6168, Completion=116, Cumulative Input=29051, Cumulative Completion=2468, Total=6284, Cumulative Total=31519
+2025-08-02 17:23:56.559 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:23:56.559 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:23:56.559 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:23:56.559 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:23:56.559 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:23:56.652 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: queued
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:23:56.652 | INFO     | app.agent.base:run:140 - Executing step 7/50
+2025-08-02 17:24:04.299 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6393, Completion=354, Cumulative Input=35444, Cumulative Completion=2822, Total=6747, Cumulative Total=38266
+2025-08-02 17:24:04.300 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:04.300 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:04.300 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:24:04.300 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import time, json, os, textwrap, sys\n"}
+2025-08-02 17:24:04.300 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:24:05.657 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': '', 'success': True}
+2025-08-02 17:24:05.657 | INFO     | app.agent.base:run:140 - Executing step 8/50
+2025-08-02 17:24:14.583 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6561, Completion=244, Cumulative Input=42005, Cumulative Completion=3066, Total=6805, Cumulative Total=45071
+2025-08-02 17:24:14.583 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:14.583 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:14.584 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:24:14.584 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:24:14.584 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:24:15.063 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:24:15.063 | INFO     | app.agent.base:run:140 - Executing step 9/50
+2025-08-02 17:24:19.580 | INFO     | app.llm:update_token_count:250 - Token usage: Input=6787, Completion=180, Cumulative Input=48792, Cumulative Completion=3246, Total=6967, Cumulative Total=52038
+2025-08-02 17:24:19.580 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:19.580 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:19.580 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:24:19.580 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:24:19.580 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:24:19.665 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:24:19.665 | INFO     | app.agent.base:run:140 - Executing step 10/50
+2025-08-02 17:24:23.694 | INFO     | app.llm:update_token_count:250 - Token usage: Input=7013, Completion=180, Cumulative Input=55805, Cumulative Completion=3426, Total=7193, Cumulative Total=59231
+2025-08-02 17:24:23.695 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:23.695 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:23.695 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:24:23.695 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:24:23.695 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:24:23.771 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:24:23.771 | INFO     | app.agent.base:run:140 - Executing step 11/50
+2025-08-02 17:24:28.795 | INFO     | app.llm:update_token_count:250 - Token usage: Input=7239, Completion=180, Cumulative Input=63044, Cumulative Completion=3606, Total=7419, Cumulative Total=66650
+2025-08-02 17:24:28.795 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:28.795 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:28.796 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:24:28.796 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:24:28.796 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:24:28.972 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:24:28.972 | INFO     | app.agent.base:run:140 - Executing step 12/50
+2025-08-02 17:24:47.252 | INFO     | app.llm:update_token_count:250 - Token usage: Input=7465, Completion=477, Cumulative Input=70509, Cumulative Completion=4083, Total=7942, Cumulative Total=74592
+2025-08-02 17:24:47.252 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:24:47.252 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:24:47.252 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:24:47.252 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import requests, bs4, textwrap, html, json, re, os, datetime\nquery='\"Agents in the Loop\" hackathon'\nurl='https://duckduckgo.com/html/?q='+requests.utils.quote(query)\nprint('Fetching', url)\nhtml_text=requests.get(url, headers={'User-Agent':'Mozilla/5.0'}).text\nsoup=bs4.BeautifulSoup(html_text, 'html.parser')\nresults=[]\nfor r in soup.select('div.result'): \n    title=r.find('a', class_='result__a')\n    snippet=r.find('a', class_='result__snippet')\n    if title and snippet:\n        results.append({'title':title.get_text(strip=True), 'link':title['href'], 'snippet':snippet.get_text(strip=True)})\nprint('Top 5:', json.dumps(results[:5], indent=2)[:500])"}
+2025-08-02 17:24:47.252 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:24:49.489 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': 'Fetching https://duckduckgo.com/html/?q=%22Agents%20in%20the%20Loop%22%20hackathon\nTop 5: [\n  {\n    "title": "Agents In The Loop Hackathon - 2025: Build agentic workflows - one that ...",\n    "link": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fagents%2Din%2Dthe%2Dloop%2D2025.devpost.com%2F&rut=25c26ec22c4c84bbf51d9bdb85438fe36472cceed1a2b292b3a780404f26b68f",\n    "snippet": "\\ud83c\\udfaf About the Challenge Join us for a weekend of innovation in San Francisco on August 2, 2025, where we\'re inviting builders, designers, and dreamers to rethink how workflows are built\\u2014with intelligenc\n', 'success': True}
+2025-08-02 17:24:49.490 | INFO     | app.agent.base:run:140 - Executing step 13/50
+2025-08-02 17:25:03.281 | INFO     | app.llm:update_token_count:250 - Token usage: Input=8036, Completion=436, Cumulative Input=78545, Cumulative Completion=4519, Total=8472, Cumulative Total=83064
+2025-08-02 17:25:03.282 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:25:03.282 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:25:03.282 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:25:03.282 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:25:03.283 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:25:03.569 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:25:03.569 | INFO     | app.agent.base:run:140 - Executing step 14/50
+2025-08-02 17:25:18.850 | INFO     | app.llm:update_token_count:250 - Token usage: Input=8262, Completion=157, Cumulative Input=86807, Cumulative Completion=4676, Total=8419, Cumulative Total=91483
+2025-08-02 17:25:18.850 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:25:18.850 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:25:18.851 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:25:18.851 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"list_calls","limit":5}
+2025-08-02 17:25:18.851 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:25:20.459 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Recent Calls (showing 5 of 5 requested):
+
+1. Call 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+   Status: in-progress
+   Type: outboundPhoneCall
+   Cost: $0.00
+
+2. Call 94b295f7-cfb8-4616-a97a-7cc5f02371ba
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.04
+
+3. Call 7be256c5-c35e-47c5-b2f7-823d7b7e10e9
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.19
+
+4. Call a70f4ce4-20a2-4770-b972-244a06a51655
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.04
+
+5. Call a6608a11-fc6e-464b-be47-f1977773f261
+   Status: ended
+   Type: outboundPhoneCall
+   Cost: $0.02
+
+
+2025-08-02 17:25:20.459 | INFO     | app.agent.base:run:140 - Executing step 15/50
+2025-08-02 17:25:32.523 | INFO     | app.llm:update_token_count:250 - Token usage: Input=8666, Completion=46, Cumulative Input=95473, Cumulative Completion=4722, Total=8712, Cumulative Total=100195
+2025-08-02 17:25:32.523 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:25:32.524 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:25:32.524 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:25:32.524 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"end_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:25:32.524 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:25:32.524 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Error: Direct call ending not available through this SDK. See output for alternatives.
+2025-08-02 17:25:32.525 | INFO     | app.agent.base:run:140 - Executing step 16/50
+2025-08-02 17:25:56.140 | INFO     | app.llm:update_token_count:250 - Token usage: Input=8860, Completion=542, Cumulative Input=104333, Cumulative Completion=5264, Total=9402, Cumulative Total=109597
+2025-08-02 17:25:56.141 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:25:56.141 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:25:56.141 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:25:56.141 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import time, requests, json, os"}
+2025-08-02 17:25:56.141 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:25:57.474 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': '', 'success': True}
+2025-08-02 17:25:57.475 | INFO     | app.agent.base:run:140 - Executing step 17/50
+2025-08-02 17:26:11.628 | INFO     | app.llm:update_token_count:250 - Token usage: Input=9024, Completion=228, Cumulative Input=113357, Cumulative Completion=5492, Total=9252, Cumulative Total=118849
+2025-08-02 17:26:11.628 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:26:11.628 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:26:11.628 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:26:11.628 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import time, requests, json, os, sys\nimport openai"}
+2025-08-02 17:26:11.628 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:26:12.924 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': '', 'success': True}
+2025-08-02 17:26:12.924 | INFO     | app.agent.base:run:140 - Executing step 18/50
+2025-08-02 17:26:26.346 | ERROR    | app.llm:ask_tool:761 - OpenAI API error: Error code: 429 - {'error': {'message': 'Rate limit reached for o3 in organization org-b9Q61LNTzGWrgxli0uFjdUSn on tokens per min (TPM): Limit 30000, Used 24061, Requested 5977. Please try again in 76ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+2025-08-02 17:26:26.346 | ERROR    | app.llm:ask_tool:765 - Rate limit exceeded. Consider increasing retry attempts.
+2025-08-02 17:26:32.417 | INFO     | app.llm:update_token_count:250 - Token usage: Input=9194, Completion=244, Cumulative Input=122551, Cumulative Completion=5736, Total=9438, Cumulative Total=128287
+2025-08-02 17:26:32.417 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:26:32.417 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:26:32.418 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:26:32.418 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:26:32.418 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:26:32.568 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: in-progress
+Type: outboundPhoneCall
+Cost: $0.00
+
+2025-08-02 17:26:32.568 | INFO     | app.agent.base:run:140 - Executing step 19/50
+2025-08-02 17:26:50.987 | INFO     | app.llm:update_token_count:250 - Token usage: Input=9420, Completion=280, Cumulative Input=131971, Cumulative Completion=6016, Total=9700, Cumulative Total=137987
+2025-08-02 17:26:50.987 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:26:50.988 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:26:50.988 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:26:50.988 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import time"}
+2025-08-02 17:26:50.988 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:26:52.314 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': '', 'success': True}
+2025-08-02 17:26:52.314 | INFO     | app.agent.base:run:140 - Executing step 20/50
+2025-08-02 17:27:15.842 | INFO     | app.llm:update_token_count:250 - Token usage: Input=9578, Completion=726, Cumulative Input=141549, Cumulative Completion=6742, Total=10304, Cumulative Total=148291
+2025-08-02 17:27:15.842 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:27:15.842 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:27:15.843 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['python_execute']
+2025-08-02 17:27:15.843 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"code":"import requests, bs4, re, json, textwrap, html\nurl='https://agents-in-the-loop-2025.devpost.com/'\nhtml_text=requests.get(url, headers={'User-Agent':'Mozilla/5.0'}).text[:3000]\nprint(html_text[:1000])"}
+2025-08-02 17:27:15.843 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'python_execute'...
+2025-08-02 17:27:17.813 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'python_execute' completed its mission! Result: Observed output of cmd `python_execute` executed:
+{'observation': '<!DOCTYPE html>\n<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->\n<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->\n<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang="en" class="no-js" xmlns:fb="http://ogp.me/ns/fb#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> <!--<![endif]-->\n  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# challengepost: http://ogp.me/ns/fb/challengepost#">\n    <!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n    new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n    \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,\'script\',\'dataLayer\',\'GTM-WCFRZ3V\');</script>\n<!-- End Google Tag Manager -->\n\n      <script type="text\n', 'success': True}
+2025-08-02 17:27:17.813 | INFO     | app.agent.base:run:140 - Executing step 21/50
+2025-08-02 17:27:32.172 | INFO     | app.llm:update_token_count:250 - Token usage: Input=10169, Completion=372, Cumulative Input=151718, Cumulative Completion=7114, Total=10541, Cumulative Total=158832
+2025-08-02 17:27:32.172 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:27:32.172 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:27:32.172 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['vapi_call']
+2025-08-02 17:27:32.172 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_call","call_id":"9b4aa2c8-d75b-427f-ba0d-042e4134582a"}
+2025-08-02 17:27:32.172 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'vapi_call'...
+2025-08-02 17:27:32.403 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'vapi_call' completed its mission! Result: Observed output of cmd `vapi_call` executed:
+Call Information:
+ID: 9b4aa2c8-d75b-427f-ba0d-042e4134582a
+Status: ended
+Type: outboundPhoneCall
+Cost: $0.22
+
+Transcript:
+AI: Hi, Arian. Congratulations on winning the agents in the loop hackathon. I'd love to ask you a few questions about your experience. Is now a good time?
+User: Yep. It's a perfect time.
+AI: Great. To start off, could you briefly describe the project that won the hackathon?
+User: I I build Depo on it. It's a general agent that can do anything autonomously. Obviously, it uses the Compose Your tool to, you know, have access to hundreds of tools, and then it uses WAVI to even call and do research on it. So it can do anything, like market research, call some restaurants, and do this. Like, anything you give, it goes and does the task, like, literally does it.
+AI: That sounds impressive. What inspired you to build this project?
+User: I mean, agents is something I was working on, and I when I saw this track, like, agents do everything. Like, I was super excited, and that's that's where the main inspiration came from.
+AI: It's great to hear how your passion for agents fueled your project. What was
+User: I'm sorry. You got cut in the middle.
+AI: No problem at all. Was the biggest technical challenge you faced? And how did you overcome it?
+User: She's building the whole thing was extremely technically complicated. I think integrating the composite tools and stuff were also quite complicated. I think there were a lot of complications, specific 1. I can't describe, but I mean, it was fun. Like, I've been working on agents for quite some time. So now I've been using my own framework that I've created learn from my old job. So yeah, I mean, there are a lot of complications, but CloudCall with Opus 4 did a great job.
+AI: It sounds like you navigated some significant challenges. How did you incorporate agents in the loop concepts into your solution?
+User: So agents in the loop is basically, I made it fully autonomous. So before if you go to chat, GPD, it does, like, only web task. But now this can do any kind of task with any set of tools, like, to compose your and. Like, imagine doing a market research. It goes calls people up and looks at it through the web and runs for, like, an hour. Like, can run for, like, 2 or 3 hours, creates a whole dog, meals people, reads your meal and everything, and then gives a report out of that. Imagine how crazy that would be and everything autonomous. Like, you were probably sleeping and it's going every
+AI: That sounds incredibly powerful. And innovative.
+User: Yep. That's it. Anything else you would like to ask? Or are we good?
+AI: I have just a couple more questions. How do you see this project evolving in the future?
+User: Hey. Actually, the submission time is coming Could you cut the call? Like, I think this much should be good information for you.
+AI: Absolutely. I understand. Thank you so much for sharing your insights. Arjun, before we wrap up, do you have any advice for future hackathon participants?
+User: Yeah. Just go and have fun. Thanks. Have a good 1. Bye bye.
+AI: Thank you, Arian.
+
+
+2025-08-02 17:27:32.404 | INFO     | app.agent.base:run:140 - Executing step 22/50
+2025-08-02 17:27:53.127 | INFO     | app.llm:update_token_count:250 - Token usage: Input=11085, Completion=160, Cumulative Input=162803, Cumulative Completion=7274, Total=11245, Cumulative Total=170077
+2025-08-02 17:27:53.128 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:27:53.129 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:27:53.129 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:27:53.129 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 17:27:53.129 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:27:53.141 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 17:27:53.141 | INFO     | app.agent.base:run:140 - Executing step 23/50
+2025-08-02 17:28:19.587 | INFO     | app.llm:update_token_count:250 - Token usage: Input=11404, Completion=265, Cumulative Input=174207, Cumulative Completion=7539, Total=11669, Cumulative Total=181746
+2025-08-02 17:28:19.587 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:28:19.588 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:28:19.588 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:28:19.588 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"create_email_draft","parameters":{"to":"aaryanmittal154@gmail.com","subject":"Draft LinkedIn Post about your Agents in the Loop Hackathon Win","body":"PLACEHOLDER"}}
+2025-08-02 17:28:19.588 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:28:20.312 | INFO     | app.tool.composio_tool:_execute_tool_action:403 - Executing GMAIL_CREATE_EMAIL_DRAFT with parameters: {'to': 'aaryanmittal154@gmail.com', 'subject': 'Draft LinkedIn Post about your Agents in the Loop Hackathon Win', 'body': 'PLACEHOLDER'}
+2025-08-02 17:28:22.194 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Error: Invalid request data provided
+- Following fields are missing: {'recipient_email'}
+2025-08-02 17:28:22.194 | INFO     | app.agent.base:run:140 - Executing step 24/50
+2025-08-02 17:28:39.756 | INFO     | app.llm:update_token_count:250 - Token usage: Input=11622, Completion=96, Cumulative Input=185829, Cumulative Completion=7635, Total=11718, Cumulative Total=193464
+2025-08-02 17:28:39.757 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:28:39.757 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:28:39.757 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:28:39.757 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"get_tool_info","tool_name":"gmail"}
+2025-08-02 17:28:39.757 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:28:39.771 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Observed output of cmd `composio_tool` executed:
+Tool: gmail (GMAIL)
+Category: 📧 Email & Communication
+
+Available Actions (23):
+  - get_people: get people
+  - fetch_emails: fetch emails
+  - fetch_message_by_thread_id: fetch message by thread id
+  - search_people: search people
+  - send_email: send email
+  - create_email_draft: create email draft
+  - fetch_message_by_message_id: fetch message by message id
+  - move_to_trash: move to trash
+  - create_label: create label
+  - patch_label: patch label
+  ... and 13 more actions
+
+
+To execute an action, use: {"action": "execute", "tool_name": "gmail", "action_name": "<action>", "parameters": {...}}
+2025-08-02 17:28:39.772 | INFO     | app.agent.base:run:140 - Executing step 25/50
+2025-08-02 17:29:14.010 | INFO     | app.llm:update_token_count:250 - Token usage: Input=11941, Completion=841, Cumulative Input=197770, Cumulative Completion=8476, Total=12782, Cumulative Total=206246
+2025-08-02 17:29:14.014 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:29:14.015 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:29:14.015 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['composio_tool']
+2025-08-02 17:29:14.015 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"action":"execute","tool_name":"gmail","action_name":"send_email","parameters":{"recipient_email":"aaryanmittal154@gmail.com","subject":"LinkedIn Post: Celebrating Your Agents in the Loop Hackathon Win!","body":"Hi Aaryan,\n\nCongrats again on winning the Agents in the Loop Hackathon! 🎉\n\nBelow is a draft LinkedIn post highlighting your achievement. Feel free to tweak and post whenever you’re ready:\n\n---\nThrilled to share some exciting news! Over the weekend, I had the honor of competing in the #AgentsInTheLoop Hackathon 2025 in San Francisco — and my project, \"Deptheon,\" took home 1st place! 🏆\n\nDeptheon is a fully autonomous AI agent that can tap into hundreds of real-world tools via @Composio and even place live phone calls with @Vapi. From end-to-end market research to making reservations while you sleep, it can seamlessly orchestrate complex, multi-hour workflows with minimal human input.\n\n🤖 Why I built it: I’ve been fascinated by agentic AI for years, and this track was the perfect playground to turn that curiosity into something real.\n\n🛠 Biggest challenge: Integrating such a diverse toolset smoothly was no small feat, but pushing those boundaries was half the fun.\n\n🔄 Agents-in-the-loop: Depthoen’s secret sauce is its ability to autonomously loop through planning, execution, and learning cycles — calling APIs, browsing the web, emailing results, or even dialing phone numbers.\n\n🚀 What’s next: Scaling Depthon to handle even more complex workflows and opening it up for beta users.\n\n💡 Tip for future hackers: Just go and have fun! The magic happens when curiosity leads the way.\n\nThanks to the organizers, mentors, and everyone who made this event unforgettable. Let’s keep building the future together!\n---\n\nLet me know if you’d like any edits!\n\nBest,\n[Your Name]"}}
+2025-08-02 17:29:14.016 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'composio_tool'...
+2025-08-02 17:29:14.639 | INFO     | app.tool.composio_tool:_execute_tool_action:403 - Executing GMAIL_SEND_EMAIL with parameters: {'recipient_email': 'aaryanmittal154@gmail.com', 'subject': 'LinkedIn Post: Celebrating Your Agents in the Loop Hackathon Win!', 'body': 'Hi Aaryan,\n\nCongrats again on winning the Agents in the Loop Hackathon! 🎉\n\nBelow is a draft LinkedIn post highlighting your achievement. Feel free to tweak and post whenever you’re ready:\n\n---\nThrilled to share some exciting news! Over the weekend, I had the honor of competing in the #AgentsInTheLoop Hackathon 2025 in San Francisco — and my project, "Deptheon," took home 1st place! 🏆\n\nDeptheon is a fully autonomous AI agent that can tap into hundreds of real-world tools via @Composio and even place live phone calls with @Vapi. From end-to-end market research to making reservations while you sleep, it can seamlessly orchestrate complex, multi-hour workflows with minimal human input.\n\n🤖 Why I built it: I’ve been fascinated by agentic AI for years, and this track was the perfect playground to turn that curiosity into something real.\n\n🛠 Biggest challenge: Integrating such a diverse toolset smoothly was no small feat, but pushing those boundaries was half the fun.\n\n🔄 Agents-in-the-loop: Depthoen’s secret sauce is its ability to autonomously loop through planning, execution, and learning cycles — calling APIs, browsing the web, emailing results, or even dialing phone numbers.\n\n🚀 What’s next: Scaling Depthon to handle even more complex workflows and opening it up for beta users.\n\n💡 Tip for future hackers: Just go and have fun! The magic happens when curiosity leads the way.\n\nThanks to the organizers, mentors, and everyone who made this event unforgettable. Let’s keep building the future together!\n---\n\nLet me know if you’d like any edits!\n\nBest,\n[Your Name]'}
+2025-08-02 17:29:16.750 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'composio_tool' completed its mission! Result: Cmd `composio_tool` completed with no output
+2025-08-02 17:29:16.750 | INFO     | app.agent.base:run:140 - Executing step 26/50
+2025-08-02 17:29:36.408 | INFO     | app.llm:update_token_count:250 - Token usage: Input=12516, Completion=612, Cumulative Input=210286, Cumulative Completion=9088, Total=13128, Cumulative Total=219374
+2025-08-02 17:29:36.409 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: Task recap and tool-by-tool results
+
+1. Web search on the hackathon  
+   • Tried Composio-Exa search (authentication error).  
+   • Fell back to Python scraping of DuckDuckGo.  
+   • Top hit: “Agents In The Loop Hackathon 2025 – Build agentic workflows” (Devpost page).  
+   ✔️ Requirement satisfied (“use code if search fails”).
+
+2. Phone interview with Aaryan (+1-415-605-6693)  
+   • Used Vapi’s create_call to launch an outbound call with a scripted interview assistant.  
+   • Call status: ended, duration ~2 min.  
+   • Captured transcript (key points below):
+
+     – Winning project: “Deptheon”, a fully autonomous agent that chains hundreds of Composio tools and can place live calls via Vapi.  
+     – Inspiration: long-time interest in agents, hackathon theme fit perfectly.  
+     – Biggest technical hurdle: integrating the diverse toolset smoothly.  
+     – Agents-in-the-loop angle: full autonomy across planning / execution cycles, incl. web + phone actions.  
+     – Future vision: scale to more complex workflows, open beta.  
+     – Advice to hackers: “Just go and have fun.”
+
+3. LinkedIn post draft  
+   • Composed a high-energy post highlighting the win, tech stack, challenges, future plans, and advice.  
+   • Sent it via Gmail (Composio) to aaryanmittal154@gmail.com with subject:  
+     “LinkedIn Post: Celebrating Your Agents in the Loop Hackathon Win!”  
+
+   (Email delivered as plain text; Aaryan can tweak and post.)
+
+All requested actions are complete: search performed, interview conducted, LinkedIn post drafted & emailed.
+
+No further steps pending.
+2025-08-02 17:29:36.409 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 0 tools to use
+2025-08-02 17:29:36.409 | INFO     | app.agent.base:run:140 - Executing step 27/50
+2025-08-02 17:29:57.850 | INFO     | app.llm:update_token_count:250 - Token usage: Input=13004, Completion=151, Cumulative Input=223290, Cumulative Completion=9239, Total=13155, Cumulative Total=232529
+2025-08-02 17:29:57.858 | INFO     | app.agent.toolcall:think:81 - ✨ Deptheon's thoughts: 
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:think:82 - 🛠️ Deptheon selected 1 tools to use
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:think:86 - 🧰 Tools being prepared: ['terminate']
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:think:89 - 🔧 Tool arguments: {"status":"success"}
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:execute_tool:180 - 🔧 Activating tool: 'terminate'...
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:_handle_special_tool:217 - 🏁 Special tool 'terminate' has completed the task!
+2025-08-02 17:29:57.859 | INFO     | app.agent.toolcall:act:150 - 🎯 Tool 'terminate' completed its mission! Result: Observed output of cmd `terminate` executed:
+The interaction has been completed with status: success
+2025-08-02 17:29:57.860 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 17:29:57.861 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
+2025-08-02 17:29:57.861 | INFO     | __main__:main:32 - Request processing completed.
+2025-08-02 17:29:57.861 | INFO     | app.agent.toolcall:cleanup:231 - 🧹 Cleaning up resources for agent 'Deptheon'...
+2025-08-02 17:29:57.862 | INFO     | app.agent.toolcall:cleanup:243 - ✨ Cleanup complete for agent 'Deptheon'.
